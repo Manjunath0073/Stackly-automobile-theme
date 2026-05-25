@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Stackly Auto Care</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- Remix Icons -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+
+    <!-- AOS Animation -->
+    <link
+        href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+        rel="stylesheet"
+    />
+
+    <!-- Swiper -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+</head>
+
+<body>
+
+    <!-- ========================================= -->
+    <!-- CUSTOM CURSOR -->
+    <!-- ========================================= -->
+
+    <div class="custom-cursor"></div>
+
+    <!-- ========================================= -->
+    <!-- SCROLL PROGRESS -->
+    <!-- ========================================= -->
+
+    <div class="scroll-progress"></div>
+
+    <!-- ========================================= -->
+    <!-- HEADER -->
+    <!-- ========================================= -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <div class="logo">
+                    <img src="assets/logo-stackly.webp" alt="Stackly Motors Logo">
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+
+                    <button class="secondary-btn nav-login-btn">
+                        Login
+                    </button>
+
+                    <button class="primary-btn nav-signup-btn">
+                        Sign Up
+                    </button>
+
+                    <div class="menu-toggle">
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- ========================================= -->
+    <!-- HERO SECTION -->
+    <!-- ========================================= -->
+
+    <section class="hero-section" id="hero">
+
+        <div class="hero-gradient"></div>
+
+        <div class="hero-noise"></div>
+
+        <div class="floating-light light-1"></div>
+        <div class="floating-light light-2"></div>
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <!-- LEFT CONTENT -->
+
+                <div class="hero-left">
+
+                    <div class="hero-badge">
+
+                        <span></span>
+
+                        Premium Automotive Excellence
+
+                    </div>
+
+                    <h1 class="hero-title">
+
+                        Crafted For
+                        <span class="gold-text">
+                            Luxury
+                        </span>
+
+                        Performance
+
+                    </h1>
+
+                    <p class="hero-description">
+
+                        Experience elite automobile servicing with precision
+                        engineering, luxury detailing, ceramic protection,
+                        and high-performance automotive care.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <button class="primary-btn">
+                            Book Appointment
+                        </button>
+
+                        <button class="secondary-btn">
+                            Explore Services
+                        </button>
+
+                    </div>
+
+                    <!-- HERO STATS -->
+
+                    <div class="hero-stats">
+
+                        <div class="hero-stat">
+
+                            <h3>12K+</h3>
+                            <span>Vehicles Serviced</span>
+
+                        </div>
+
+                        <div class="hero-stat">
+
+                            <h3>15+</h3>
+                            <span>Years Experience</span>
+
+                        </div>
+
+                        <div class="hero-stat">
+
+                            <h3>98%</h3>
+                            <span>Client Satisfaction</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT CONTENT -->
+
+                <div class="hero-right">
+
+                <div class="hero-image-wrapper">
+
+                    <img
+                        src="Assets/hero-image.webp"
+                        alt="Luxury Car"
+                        class="hero-car"
+                    >
+                <div class="hero-feature-cards">
+
+                    <!-- CARD -->
+
+                    <div class="hero-info-card">
+
+                        <div class="card-inner">
+
+                            <div class="card-front">
+
+                                <div class="card-icon">
+                                    <i class="ri-shield-star-line"></i>
+                                </div>
+
+                                <h4>Premium Detailing</h4>
+
+                                <p>
+                                    Ceramic coating & luxury finish
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CARD -->
+
+                    <div class="hero-info-card">
+
+                        <div class="card-inner">
+
+                            <div class="card-front">
+
+                                <div class="card-icon">
+                                    <i class="ri-settings-3-line"></i>
+                                </div>
+
+                                <h4>Performance Tuning</h4>
+
+                                <p>
+                                    Precision engine upgrades and diagnostics
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                </div>
+
+            </div>
+
+            </div>
+
+        </div>
+
+        <!-- SCROLL INDICATOR -->
+
+        <div class="hero-scroll">
+
+            <span></span>
+
+        </div>
+
+    </section>
+    <!-- ========================================= -->
+    <!-- SERVICES SECTION -->
+    <!-- ========================================= -->
+
+    <section class="services-section section-padding" id="services">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-tag">
+                    Premium Services
+                </span>
+
+                <h2 class="section-title">
+                    Complete Automotive Solutions Designed For Excellence
+                </h2>
+
+                <p class="section-description">
+                    We provide advanced automotive solutions with luxury-grade
+                    service standards, ensuring your vehicle performs at its
+                    absolute best.
+                </p>
+
+            </div>
+
+            <div class="services-grid">
+
+                <!-- CARD -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="ri-settings-3-fill"></i>
+                    </div>
+
+                    <h3>Engine Diagnostics</h3>
+
+                    <p>
+                        Comprehensive engine diagnostics using advanced
+                        computerized systems for accurate fault detection.
+                    </p>
+
+                    <ul>
+                        <li>ECU Analysis</li>
+                        <li>Performance Testing</li>
+                        <li>Advanced Scanning</li>
+                    </ul>
+
+                </div>
+
+                <!-- CARD -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="ri-car-washing-fill"></i>
+                    </div>
+
+                    <h3>Luxury Detailing</h3>
+
+                    <p>
+                        Restore showroom-quality finish with premium interior
+                        and exterior detailing services.
+                    </p>
+
+                    <ul>
+                        <li>Interior Cleaning</li>
+                        <li>Paint Correction</li>
+                        <li>Deep Polishing</li>
+                    </ul>
+
+                </div>
+
+                <!-- CARD -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="ri-flashlight-fill"></i>
+                    </div>
+
+                    <h3>Performance Tuning</h3>
+
+                    <p>
+                        Unlock enhanced power, throttle response, and fuel
+                        efficiency with custom tuning.
+                    </p>
+
+                    <ul>
+                        <li>Turbo Optimization</li>
+                        <li>ECU Remapping</li>
+                        <li>Fuel Calibration</li>
+                    </ul>
+
+                </div>
+
+                <!-- CARD -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="ri-oil-fill"></i>
+                    </div>
+
+                    <h3>Oil Replacement</h3>
+
+                    <p>
+                        Premium oil replacement using manufacturer-recommended
+                        synthetic lubricants.
+                    </p>
+
+                    <ul>
+                        <li>Engine Protection</li>
+                        <li>Fluid Inspection</li>
+                        <li>Filter Replacement</li>
+                    </ul>
+
+                </div>
+
+                <!-- CARD -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="ri-steering-2-fill"></i>
+                    </div>
+
+                    <h3>Wheel Alignment</h3>
+
+                    <p>
+                        Precision wheel balancing and alignment for smoother
+                        handling and tire longevity.
+                    </p>
+
+                    <ul>
+                        <li>Digital Alignment</li>
+                        <li>Tire Balancing</li>
+                        <li>Suspension Check</li>
+                    </ul>
+
+                </div>
+
+                <!-- CARD -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="ri-shield-star-fill"></i>
+                    </div>
+
+                    <h3>Ceramic Coating</h3>
+
+                    <p>
+                        Long-lasting paint protection with hydrophobic ceramic
+                        coating technology.
+                    </p>
+
+                    <ul>
+                        <li>UV Protection</li>
+                        <li>Gloss Finish</li>
+                        <li>Scratch Resistance</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- ABOUT SECTION -->
+    <!-- ========================================= -->
+
+    <section class="about-section section-padding" id="about">
+
+        <div class="container">
+
+            <div class="about-wrapper">
+
+                <div class="about-images">
+
+                    <div class="about-image-large">
+                        <img src="Assets/eugene-kucheruk-8qf2wMH0E1o-unsplash_11zon.webp" alt="">
+                    </div>
+
+                    <div class="about-image-small">
+                        <img src="Assets/luc-van-loon-5MlHT9y1CMA-unsplash_11zon.webp" alt="">
+                    </div>
+
+                </div>
+
+                <div class="about-content">
+
+                    <span class="section-tag">
+                        About Veltrix
+                    </span>
+
+                    <h2 class="section-title">
+                        Luxury Automotive Care Built On Trust & Precision
+                    </h2>
+
+                    <p>
+                        At Veltrix Auto Care, we combine cutting-edge automotive
+                        technology with expert craftsmanship to deliver premium
+                        service experiences for every customer.
+                    </p>
+
+                    <p>
+                        Our technicians specialize in luxury vehicle maintenance,
+                        detailing, diagnostics, and high-performance upgrades.
+                    </p>
+
+                    <div class="about-features">
+
+                        <div class="about-feature-card">
+                            <i class="ri-award-line"></i>
+
+                            <div>
+                                <h4>10+ Years Experience</h4>
+                                <p>
+                                    Trusted by thousands of premium vehicle owners.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature-card">
+                            <i class="ri-user-star-line"></i>
+
+                            <div>
+                                <h4>Certified Experts</h4>
+                                <p>
+                                    Highly trained specialists for all major brands.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="primary-btn">
+                        Learn More
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- STATS SECTION -->
+    <!-- ========================================= -->
+
+    <section class="stats-section section-padding" id="stats">
+
+        <div class="container">
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <h2 class="counter" data-target="12000">0</h2>
+                    <p>Cars Serviced</p>
+                </div>
+
+                <div class="stat-card">
+                    <h2 class="counter" data-target="15">0</h2>
+                    <p>Years Experience</p>
+                </div>
+
+                <div class="stat-card">
+                    <h2 class="counter" data-target="35">0</h2>
+                    <p>Expert Mechanics</p>
+                </div>
+
+                <div class="stat-card">
+                    <h2 class="counter" data-target="98">0</h2>
+                    <p>Customer Satisfaction</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- GALLERY SECTION -->
+    <!-- ========================================= -->
+
+    <section class="gallery-section section-padding" id="gallery">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-tag">
+                    Showcase
+                </span>
+
+                <h2 class="section-title">
+                    Precision Detailing & Luxury Transformations
+                </h2>
+
+            </div>
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item">
+                    <img src="Assets/ferrari-gallery.webp" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Assets/car-interior.webp" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Assets/bmw-interior.webp" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Assets/luc-van-loon-5MlHT9y1CMA-unsplash_11zon.webp" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Assets/markus-spiske-1fkoklr9ZIA-unsplash_11zon.webp" alt="">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Assets/lorenzo-hamers-OjToDRA8StA-unsplash_11zon.webp" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- TESTIMONIALS SECTION -->
+    <!-- ========================================= -->
+
+    <section class="testimonials-section section-padding" id="testimonials">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-tag">
+                    Client Testimonials
+                </span>
+
+                <h2 class="section-title">
+                    Trusted By Luxury Vehicle Owners Across The Region
+                </h2>
+
+            </div>
+
+            <div class="testimonial-slider swiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+
+                        <div class="testimonial-card">
+
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+
+                            <p>
+                                Exceptional service quality and highly professional
+                                technicians. My vehicle feels brand new after detailing.
+                            </p>
+
+                            <div class="client-info">
+
+                                <img src="assets/images/client-1.jpg" alt="">
+
+                                <div>
+                                    <h4>Arjun R</h4>
+                                    <span>BMW Owner</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="testimonial-card">
+
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+
+                            <p>
+                                The ceramic coating and polishing exceeded expectations.
+                                Truly premium experience from start to finish.
+                            </p>
+
+                            <div class="client-info">
+
+                                <img src="assets/images/client-2.jpg" alt="">
+
+                                <div>
+                                    <h4>Vikram S</h4>
+                                    <span>Audi Owner</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- CONTACT SECTION -->
+    <!-- ========================================= -->
+
+    <section class="contact-section section-padding" id="contact">
+
+        <div class="container">
+
+            <div class="contact-wrapper">
+
+                <div class="contact-info">
+
+                    <span class="section-tag">
+                        Contact Us
+                    </span>
+
+                    <h2 class="section-title">
+                        Book Your Premium Automobile Service Today
+                    </h2>
+
+                    <p>
+                        Connect with our automotive experts for luxury servicing,
+                        detailing, diagnostics, and performance upgrades.
+                    </p>
+
+                    <div class="contact-details">
+
+                        <div class="contact-item">
+                            <i class="ri-map-pin-fill"></i>
+                            <span>Coimbatore, Tamil Nadu</span>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="ri-phone-fill"></i>
+                            <span>+91 98765 43210</span>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="ri-mail-fill"></i>
+                            <span>support@veltrixauto.com</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-form-card">
+
+                    <form>
+
+                        <div class="input-group">
+                            <input type="text" placeholder="Full Name">
+                        </div>
+
+                        <div class="input-group">
+                            <input type="email" placeholder="Email Address">
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" placeholder="Vehicle Model">
+                        </div>
+
+                        <div class="input-group">
+                            <select>
+                                <option>Select Service</option>
+                                <option>Detailing</option>
+                                <option>Ceramic Coating</option>
+                                <option>Diagnostics</option>
+                                <option>Performance Tuning</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <textarea placeholder="Additional Details"></textarea>
+                        </div>
+
+                        <button class="primary-btn">
+                            Submit Booking
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- FOOTER -->
+    <!-- ========================================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-wrapper">
+
+                <div class="footer-brand">
+
+                    <div class="logo">
+                        VELTRIX
+                    </div>
+
+                    <p>
+                        Delivering premium automotive servicing experiences with
+                        innovation, precision, and unmatched craftsmanship.
+                    </p>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <h4>Quick Links</h4>
+
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <h4>Services</h4>
+
+                    <ul>
+                        <li><a href="#">Engine Repair</a></li>
+                        <li><a href="#">Car Detailing</a></li>
+                        <li><a href="#">Ceramic Coating</a></li>
+                        <li><a href="#">Performance Tuning</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-newsletter">
+
+                    <h4>Newsletter</h4>
+
+                    <p>
+                        Subscribe to receive service offers and automotive updates.
+                    </p>
+
+                    <form>
+
+                        <input type="email" placeholder="Enter Email">
+
+                        <button>
+                            Subscribe
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Veltrix Auto Care. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ========================================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ========================================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
