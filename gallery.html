@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Stackly Auto Care</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="gallery.css" />
+
+    <!-- Remix Icons -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+
+    <!-- AOS Animation -->
+    <link
+        href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+        rel="stylesheet"
+    />
+
+    <!-- Swiper -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+</head>
+
+<body>
+
+    <!-- ========================================= -->
+    <!-- CUSTOM CURSOR -->
+    <!-- ========================================= -->
+
+    <div class="custom-cursor"></div>
+
+    <!-- ========================================= -->
+    <!-- SCROLL PROGRESS -->
+    <!-- ========================================= -->
+
+    <div class="scroll-progress"></div>
+
+    <!-- ========================================= -->
+    <!-- HEADER -->
+    <!-- ========================================= -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <div class="logo">
+                    <img src="Assets/logo-stackly.webp" alt="Stackly Motors Logo">
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+
+                    <button class="secondary-btn nav-login-btn" onclick="window.location.href='login.html'">
+                        Login
+                    </button>
+
+                    <button class="primary-btn nav-signup-btn">
+                        Sign Up
+                    </button>
+
+                    <div class="menu-toggle">
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- ========================================= -->
+    <!-- GALLERY HERO SECTION -->
+    <!-- ========================================= -->
+
+    <section class="auto-service-hero">
+
+        <div class="auto-service-container">
+
+            <div class="auto-service-hero-layout">
+
+                <!-- LEFT -->
+
+                <div class="auto-service-left">
+
+                    <span class="auto-service-tag">
+
+                        <span></span>
+
+                        Luxury Automotive Services
+
+                    </span>
+
+                    <h1 class="auto-service-title">
+
+                        Premium Care
+                        For Elite Vehicles
+
+                    </h1>
+
+                    <p class="auto-service-description">
+
+                        Precision detailing, ceramic coating,
+                        diagnostics, and performance engineering
+                        crafted for luxury automotive excellence.
+
+                    </p>
+
+                    <div class="auto-service-actions">
+
+                        <a
+                            href="contact.html"
+                            class="primary-btn"
+                        >
+
+                            Book Service
+
+                        </a>
+
+                        <a
+                            href="service-packages.html"
+                            class="secondary-btn"
+                        >
+
+                            View Packages
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT -->
+
+                <div class="auto-service-right">
+
+                    <!-- TOP IMAGE -->
+
+                    <div class="auto-service-image image-large">
+
+                        <img
+                            src="Assets/ferrari-gallery.webp"
+                            alt=""
+                        >
+
+                    </div>
+
+                    <!-- SMALL GRID -->
+
+                    <div class="auto-service-small-grid">
+
+                        <div class="auto-service-image">
+
+                            <img
+                                src="Assets/markus-spiske-1fkoklr9ZIA-unsplash_11zon.webp"
+                                alt=""
+                            >
+
+                        </div>
+
+                        <div class="auto-service-image service-stat-card">
+
+                            <h3>12K+</h3>
+
+                            <span>
+                                Vehicles Serviced
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- GALLERY FILTER SECTION -->
+    <!-- ========================================= -->
+
+    <section class="auto-gallery-filter-section auto-section-spacing">
+
+        <div class="auto-gallery-container">
+
+            <div class="auto-gallery-filter-wrapper">
+
+                <button class="auto-gallery-filter-btn active">
+                    All Projects
+                </button>
+
+                <button class="auto-gallery-filter-btn">
+                    Ceramic Coating
+                </button>
+
+                <button class="auto-gallery-filter-btn">
+                    Premium Detailing
+                </button>
+
+                <button class="auto-gallery-filter-btn">
+                    Performance Tuning
+                </button>
+
+                <button class="auto-gallery-filter-btn">
+                    Luxury Interior
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- MASONRY GALLERY SECTION -->
+    <!-- ========================================= -->
+
+    <section
+        class="auto-gallery-showcase auto-section-spacing"
+        id="gallery-showcase"
+    >
+
+        <div class="auto-gallery-container">
+
+            <div class="auto-gallery-grid">
+
+                <!-- ITEM 1 -->
+
+                <div class="auto-gallery-item large-item">
+
+                    <img
+                        src="Assets/ferrari-gallery.webp"
+                        alt=""
+                    >
+
+                    <div class="auto-gallery-overlay">
+
+                        <span>
+                            Ceramic Coating
+                        </span>
+
+                        <h3>
+                            BMW M4 Protection Finish
+                        </h3>
+
+                    </div>
+
+                </div>
+
+                <!-- ITEM 2 -->
+
+                <div class="auto-gallery-item">
+
+                    <img
+                        src="Assets/ferrari-gallery.webp"
+                        alt=""
+                    >
+
+                    <div class="auto-gallery-overlay">
+
+                        <span>
+                            Luxury Interior
+                        </span>
+
+                        <h3>
+                            Mercedes Interior Restoration
+                        </h3>
+
+                    </div>
+
+                </div>
+
+                <!-- ITEM 3 -->
+
+                <div class="auto-gallery-item">
+
+                    <img
+                        src="Assets/ferrari-gallery.webp"
+                        alt=""
+                    >
+
+                    <div class="auto-gallery-overlay">
+
+                        <span>
+                            Performance Tuning
+                        </span>
+
+                        <h3>
+                            Porsche Turbo Optimization
+                        </h3>
+
+                    </div>
+
+                </div>
+
+                <!-- ITEM 4 -->
+
+                <div class="auto-gallery-item wide-item">
+
+                    <img
+                        src="Assets/ferrari-gallery.webp"
+                        alt=""
+                    >
+
+                    <div class="auto-gallery-overlay">
+
+                        <span>
+                            Premium Detailing
+                        </span>
+
+                        <h3>
+                            Audi RS7 Mirror Finish
+                        </h3>
+
+                    </div>
+
+                </div>
+
+                <!-- ITEM 5 -->
+
+                <div class="auto-gallery-item">
+
+                    <img
+                        src="Assets/ferrari-gallery.webp"
+                        alt=""
+                    >
+
+                    <div class="auto-gallery-overlay">
+
+                        <span>
+                            Custom Engineering
+                        </span>
+
+                        <h3>
+                            Lamborghini Performance Upgrade
+                        </h3>
+
+                    </div>
+
+                </div>
+
+                <!-- ITEM 6 -->
+
+                <div class="auto-gallery-item tall-item">
+
+                    <img
+                        src="assets/images/gallery-6.jpg"
+                        alt=""
+                    >
+
+                    <div class="auto-gallery-overlay">
+
+                        <span>
+                            Ceramic Protection
+                        </span>
+
+                        <h3>
+                            Tesla Premium Coating
+                        </h3>
+
+                    </div>
+
+                </div>
+                <!-- ITEM 7 -->
+
+                <div class="auto-gallery-item bottom-large-item">
+
+                    <img
+                        src="assets/images/gallery-7.jpg"
+                        alt=""
+                    >
+
+                    <div class="auto-gallery-overlay">
+
+                        <span>
+                            Luxury Showcase
+                        </span>
+
+                        <h3>
+                            Ferrari Signature Studio Finish
+                        </h3>
+
+                    </div>
+
+                </div>
+                <!-- ITEM 8 -->
+
+                <div class="auto-gallery-item bottom-small-item">
+
+                    <img
+                        src="assets/images/gallery-8.jpg"
+                        alt=""
+                    >
+
+                    <div class="auto-gallery-overlay">
+
+                        <span>
+                            Premium Finish
+                        </span>
+
+                        <h3>
+                            Bentley Interior Detailing
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- BEFORE AFTER SECTION -->
+    <!-- ========================================= -->
+
+    <section class="auto-before-after-section auto-section-spacing">
+
+        <div class="auto-gallery-container">
+
+            <div class="auto-section-header">
+
+                <span class="auto-gallery-tag">
+                    Transformation Showcase
+                </span>
+
+                <h2 class="auto-gallery-section-title">
+
+                    Luxury Vehicle
+                    Before & After Experience
+
+                </h2>
+
+            </div>
+
+            <div class="auto-before-after-wrapper">
+
+                <!-- LEFT -->
+
+                <div class="auto-before-card">
+
+                    <div class="auto-before-image">
+
+                        <img
+                            src="assets/images/before.jpg"
+                            alt=""
+                        >
+
+                        <span>
+                            Before
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT -->
+
+                <div class="auto-after-card">
+
+                    <div class="auto-after-image">
+
+                        <img
+                            src="assets/images/after.jpg"
+                            alt=""
+                        >
+
+                        <span>
+                            After
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- PREMIUM SHOWCASE SECTION -->
+    <!-- ========================================= -->
+
+    <section class="auto-premium-showcase auto-section-spacing">
+
+        <div class="auto-gallery-container">
+
+            <div class="auto-premium-showcase-wrapper">
+
+                <!-- LEFT -->
+
+                <div class="auto-premium-showcase-content">
+
+                    <span class="auto-gallery-tag">
+                        Elite Standards
+                    </span>
+
+                    <h2 class="auto-gallery-section-title">
+
+                        Designed For
+                        Premium Automotive Excellence
+
+                    </h2>
+
+                    <p>
+
+                        Every vehicle entering our luxury studio undergoes
+                        advanced diagnostics, premium detailing procedures,
+                        and high-end finishing crafted by certified
+                        automotive specialists.
+
+                    </p>
+
+                    <div class="auto-premium-features">
+
+                        <div class="auto-premium-feature">
+
+                            <i class="ri-award-line"></i>
+
+                            <div>
+
+                                <h4>
+                                    Certified Experts
+                                </h4>
+
+                                <span>
+                                    Industry-leading automotive specialists
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="auto-premium-feature">
+
+                            <i class="ri-vip-crown-line"></i>
+
+                            <div>
+
+                                <h4>
+                                    Luxury Finish
+                                </h4>
+
+                                <span>
+                                    Precision-crafted premium detailing
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT -->
+
+                <div class="auto-premium-showcase-images">
+
+                    <div class="auto-premium-image-large">
+
+                        <img
+                            src="assets/images/premium-1.jpg"
+                            alt=""
+                        >
+
+                    </div>
+
+                    <div class="auto-premium-image-small">
+
+                        <img
+                            src="assets/images/premium-2.jpg"
+                            alt=""
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- TESTIMONIAL GALLERY SECTION -->
+    <!-- ========================================= -->
+
+    <section class="auto-gallery-testimonials auto-section-spacing">
+
+        <div class="auto-gallery-container">
+
+            <div class="auto-section-header">
+
+                <span class="auto-gallery-tag">
+                    Client Stories
+                </span>
+
+                <h2 class="auto-gallery-section-title">
+
+                    Trusted By Luxury
+                    Vehicle Owners
+
+                </h2>
+
+            </div>
+
+            <div class="auto-gallery-testimonial-grid">
+
+                <!-- CARD 1 -->
+
+                <div class="auto-gallery-testimonial-card">
+
+                    <div class="auto-gallery-stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+
+                        Exceptional finishing quality and premium
+                        customer experience. The detailing exceeded
+                        expectations completely.
+
+                    </p>
+
+                    <div class="auto-gallery-client">
+
+                        <img
+                            src="assets/images/client-1.jpg"
+                            alt=""
+                        >
+
+                        <div>
+
+                            <h4>
+                                Arjun R
+                            </h4>
+
+                            <span>
+                                BMW M Series Owner
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- CARD 2 -->
+
+                <div class="auto-gallery-testimonial-card">
+
+                    <div class="auto-gallery-stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+
+                        The ceramic coating and performance upgrades
+                        transformed my vehicle completely. Truly
+                        luxury-level craftsmanship.
+
+                    </p>
+
+                    <div class="auto-gallery-client">
+
+                        <img
+                            src="assets/images/client-2.jpg"
+                            alt=""
+                        >
+
+                        <div>
+
+                            <h4>
+                                Vikram S
+                            </h4>
+
+                            <span>
+                                Porsche Owner
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- CTA SECTION -->
+    <!-- ========================================= -->
+
+    <section class="auto-gallery-cta auto-section-spacing">
+
+        <div class="auto-gallery-container">
+
+            <div class="auto-gallery-cta-card">
+                <div class="cta-particle"></div>
+                <div class="cta-particle"></div>
+                <div class="cta-particle"></div>
+
+                <span class="auto-gallery-tag">
+                    Premium Booking
+                </span>
+
+                <h2>
+
+                    Elevate Your Vehicle
+                    With Luxury Craftsmanship
+
+                </h2>
+
+                <p>
+
+                    Experience world-class automotive detailing,
+                    ceramic protection, and premium engineering
+                    tailored for luxury automobiles.
+
+                </p>
+
+                <a
+                    href="contact.html"
+                    class="primary-btn"
+                >
+
+                    Schedule Appointment
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+     <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-wrapper">
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+
+                        <img
+                            src="Assets/logo-stackly.webp"
+                            alt="Veltrix Auto Logo"
+                        >
+
+                    </a>
+
+                    <p>
+                        Luxury automotive care, premium detailing,
+                        diagnostics, and performance engineering
+                        crafted for elite driving experiences.
+                    </p>
+
+                    <!-- SOCIAL ICONS -->
+
+                    <div class="footer-socials">
+
+                        <a href="404.html">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a href="404.html">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+
+                        <a href="404.html">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+
+                        <a href="404.html">
+                            <i class="ri-youtube-line"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <h4>Quick Links</h4>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <h4>Services</h4>
+
+                    <ul>
+                        <li><a href="#">Engine Repair</a></li>
+                        <li><a href="#">Car Detailing</a></li>
+                        <li><a href="#">Ceramic Coating</a></li>
+                        <li><a href="#">Performance Tuning</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-newsletter">
+
+                    <h4>Newsletter</h4>
+
+                    <p>
+                        Subscribe to receive service offers and automotive updates.
+                    </p>
+
+                    <form action="404.html">
+
+                        <input
+                            type="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                        <button
+                            type="submit"
+                            class="primary-btn"
+                        >
+                            Subscribe
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Stackly Auto Care. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+<script src="gallery.js"></script>
+<script src="script.js"></script>
+</html>
