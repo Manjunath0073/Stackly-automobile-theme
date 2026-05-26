@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Stackly Auto Care</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="services.css" />
+
+    <!-- Remix Icons -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+
+    <!-- AOS Animation -->
+    <link
+        href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+        rel="stylesheet"
+    />
+
+    <!-- Swiper -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+</head>
+
+<body>
+
+    <!-- ========================================= -->
+    <!-- CUSTOM CURSOR -->
+    <!-- ========================================= -->
+
+    <div class="custom-cursor"></div>
+
+    <!-- ========================================= -->
+    <!-- SCROLL PROGRESS -->
+    <!-- ========================================= -->
+
+    <div class="scroll-progress"></div>
+
+    <!-- ========================================= -->
+    <!-- HEADER -->
+    <!-- ========================================= -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <div class="logo">
+                    <img src="Assets/logo-stackly.webp" alt="Stackly Motors Logo">
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+
+                    <button class="secondary-btn nav-login-btn" onclick="window.location.href='login.html'">
+                        Login
+                    </button>
+
+                    <button class="primary-btn nav-signup-btn">
+                        Sign Up
+                    </button>
+
+                    <div class="menu-toggle">
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- ========================================= -->
+    <!-- SERVICE HERO -->
+    <!-- ========================================= -->
+
+    <section class="auto-service-hero">
+
+        <div class="auto-service-container">
+
+            <div class="auto-service-hero-wrapper">
+
+                <!-- LEFT -->
+
+                <div class="auto-service-hero-content">
+
+                    <span class="auto-service-tag">
+
+                        <span></span>
+
+                        Premium Automotive Solutions
+
+                    </span>
+
+                    <h1 class="auto-service-hero-title">
+
+                        Precision Driven
+                        <span>
+                            Luxury Services
+                        </span>
+
+                    </h1>
+
+                    <p class="auto-service-hero-description">
+
+                        Discover elite automobile servicing engineered
+                        for luxury vehicles. From ceramic coating and
+                        detailing to diagnostics and performance tuning,
+                        every service is crafted with perfection.
+
+                    </p>
+
+                    <div class="auto-service-hero-actions">
+
+                        <a
+                            href="contact.html"
+                            class="primary-btn"
+                        >
+
+                            Book Appointment
+
+                        </a>
+
+                        <a
+                            href="#service-packages"
+                            class="secondary-btn"
+                        >
+
+                            Explore Packages
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT -->
+
+                <div class="auto-service-hero-visual">
+
+                    <div class="auto-hero-image-card">
+
+                        <img
+                            src="Assets/eugene-kucheruk-8qf2wMH0E1o-unsplash_11zon.webp"
+                            alt=""
+                        >
+
+                    </div>
+
+                    <!-- FLOATING STATS -->
+
+                    <div class="auto-hero-stat-card auto-stat-1">
+
+                        <h3>12K+</h3>
+
+                        <span>
+                            Vehicles Serviced
+                        </span>
+
+                    </div>
+
+                    <div class="auto-hero-stat-card auto-stat-2">
+
+                        <h3>98%</h3>
+
+                        <span>
+                            Satisfaction Rate
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- FEATURED SERVICES -->
+    <!-- ========================================= -->
+
+    <section class="auto-featured-services auto-section-spacing">
+
+        <div class="auto-service-container">
+
+            <div class="auto-section-header">
+
+                <span class="auto-service-tag">
+                    Featured Services
+                </span>
+
+                <h2 class="auto-section-title">
+
+                    Advanced Automotive
+                    Solutions Crafted For
+                    Luxury Vehicles
+
+                </h2>
+
+            </div>
+
+            <div class="auto-featured-services-grid">
+
+                <!-- CARD 1 -->
+
+                <div class="auto-featured-service-card">
+
+                    <div class="auto-service-image">
+
+                        <img
+                            src="Assets/car-interior.webp"
+                            alt=""
+                        >
+
+                    </div>
+
+                    <div class="auto-service-card-content">
+
+                        <div class="auto-service-icon">
+                            <i class="ri-car-washing-line"></i>
+                        </div>
+
+                        <h3>
+                            Premium Detailing
+                        </h3>
+
+                        <p>
+
+                            Deep interior cleaning,
+                            luxury polishing, and
+                            showroom-level finishing
+                            for premium automobiles.
+
+                        </p>
+
+                        <ul>
+
+                            <li>Interior Vacuuming</li>
+                            <li>Leather Protection</li>
+                            <li>Paint Enhancement</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- CARD 2 -->
+
+                <div class="auto-featured-service-card">
+
+                    <div class="auto-service-image">
+
+                        <img
+                            src="Assets/lorenzo-hamers-OjToDRA8StA-unsplash_11zon.webp"
+                            alt=""
+                        >
+
+                    </div>
+
+                    <div class="auto-service-card-content">
+
+                        <div class="auto-service-icon">
+                            <i class="ri-shield-star-line"></i>
+                        </div>
+
+                        <h3>
+                            Ceramic Coating
+                        </h3>
+
+                        <p>
+
+                            Long-lasting ceramic
+                            protection engineered
+                            for premium paint durability
+                            and enhanced gloss.
+
+                        </p>
+
+                        <ul>
+
+                            <li>Hydrophobic Layer</li>
+                            <li>UV Protection</li>
+                            <li>Mirror Finish</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- CARD 3 -->
+
+                <div class="auto-featured-service-card">
+
+                    <div class="auto-service-image">
+
+                        <img
+                            src="Assets/luc-van-loon-5MlHT9y1CMA-unsplash_11zon.webp"
+                            alt=""
+                        >
+
+                    </div>
+
+                    <div class="auto-service-card-content">
+
+                        <div class="auto-service-icon">
+                            <i class="ri-settings-5-line"></i>
+                        </div>
+
+                        <h3>
+                            Diagnostics & Tuning
+                        </h3>
+
+                        <p>
+
+                            AI-powered diagnostics
+                            and precision tuning
+                            solutions for peak
+                            automotive performance.
+
+                        </p>
+
+                        <ul>
+
+                            <li>Engine Analysis</li>
+                            <li>Performance Tuning</li>
+                            <li>Sensor Calibration</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- SERVICE PROCESS -->
+    <!-- ========================================= -->
+
+    <section class="auto-service-process auto-section-spacing">
+
+        <div class="auto-service-container">
+
+            <div class="auto-section-header">
+
+                <span class="auto-service-tag">
+                    Work Process
+                </span>
+
+                <h2 class="auto-section-title">
+
+                    Precision Workflow
+                    For Premium Vehicle Care
+
+                </h2>
+
+            </div>
+
+            <div class="auto-process-timeline">
+
+                <div class="auto-process-step">
+
+                    <div class="auto-process-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Inspection
+                    </h3>
+
+                    <p>
+
+                        Complete vehicle assessment
+                        with advanced inspection
+                        systems and diagnostics.
+
+                    </p>
+
+                </div>
+
+                <div class="auto-process-step">
+
+                    <div class="auto-process-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Diagnostics
+                    </h3>
+
+                    <p>
+
+                        Real-time performance analysis
+                        using modern automotive
+                        diagnostic technologies.
+
+                    </p>
+
+                </div>
+
+                <div class="auto-process-step">
+
+                    <div class="auto-process-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Service Execution
+                    </h3>
+
+                    <p>
+
+                        Precision detailing,
+                        repair, coating, and
+                        tuning by certified experts.
+
+                    </p>
+
+                </div>
+
+                <div class="auto-process-step">
+
+                    <div class="auto-process-number">
+                        04
+                    </div>
+
+                    <h3>
+                        Final Delivery
+                    </h3>
+
+                    <p>
+
+                        Final quality inspection
+                        and luxury delivery
+                        experience for customers.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- SERVICE PACKAGES -->
+    <!-- ========================================= -->
+
+    <section
+        class="auto-service-packages auto-section-spacing"
+        id="service-packages"
+    >
+
+        <div class="auto-service-container">
+
+            <div class="auto-section-header">
+
+                <span class="auto-service-tag">
+                    Pricing Packages
+                </span>
+
+                <h2 class="auto-section-title">
+
+                    Flexible Luxury Packages
+                    Tailored To Every Vehicle
+
+                </h2>
+
+            </div>
+
+            <div class="auto-packages-grid">
+
+                <!-- PACKAGE 1 -->
+
+                <div class="auto-package-card">
+
+                    <span class="auto-package-label">
+                        Silver Package
+                    </span>
+
+                    <h3>
+                        ₹4,999
+                    </h3>
+
+                    <p>
+
+                        Essential detailing
+                        and maintenance package
+                        for daily luxury care.
+
+                    </p>
+
+                    <ul>
+
+                        <li>Exterior Wash</li>
+                        <li>Interior Cleaning</li>
+                        <li>Tyre Polishing</li>
+                        <li>Dashboard Finishing</li>
+
+                    </ul>
+
+                    <a
+                        href="contact.html"
+                        class="auto-primary-btn"
+                    >
+                        Choose Package
+                    </a>
+
+                </div>
+
+                <!-- PACKAGE 2 -->
+
+                <div class="auto-package-card auto-active-package">
+
+                    <span class="auto-package-label">
+                        Platinum Package
+                    </span>
+
+                    <h3>
+                        ₹11,999
+                    </h3>
+
+                    <p>
+
+                        Complete premium detailing
+                        and ceramic coating
+                        experience for luxury cars.
+
+                    </p>
+
+                    <ul>
+
+                        <li>Ceramic Coating</li>
+                        <li>Paint Protection</li>
+                        <li>Leather Conditioning</li>
+                        <li>Engine Cleaning</li>
+
+                    </ul>
+
+                    <a
+                        href="contact.html"
+                        class="auto-primary-btn"
+                    >
+                        Choose Package
+                    </a>
+
+                </div>
+
+                <!-- PACKAGE 3 -->
+
+                <div class="auto-package-card">
+
+                    <span class="auto-package-label">
+                        Performance Elite
+                    </span>
+
+                    <h3>
+                        ₹24,999
+                    </h3>
+
+                    <p>
+
+                        High-performance tuning
+                        and luxury engineering
+                        crafted for enthusiasts.
+
+                    </p>
+
+                    <ul>
+
+                        <li>ECU Remapping</li>
+                        <li>Performance Analysis</li>
+                        <li>Suspension Tuning</li>
+                        <li>Premium Diagnostics</li>
+
+                    </ul>
+
+                    <a
+                        href="contact.html"
+                        class="auto-primary-btn"
+                    >
+                        Choose Package
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-wrapper">
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+
+                        <img
+                            src="Assets/logo-stackly.webp"
+                            alt="Veltrix Auto Logo"
+                        >
+
+                    </a>
+
+                    <p>
+                        Luxury automotive care, premium detailing,
+                        diagnostics, and performance engineering
+                        crafted for elite driving experiences.
+                    </p>
+
+                    <!-- SOCIAL ICONS -->
+
+                    <div class="footer-socials">
+
+                        <a href="404.html">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a href="404.html">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+
+                        <a href="404.html">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+
+                        <a href="404.html">
+                            <i class="ri-youtube-line"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <h4>Quick Links</h4>
+
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <h4>Services</h4>
+
+                    <ul>
+                        <li><a href="#">Engine Repair</a></li>
+                        <li><a href="#">Car Detailing</a></li>
+                        <li><a href="#">Ceramic Coating</a></li>
+                        <li><a href="#">Performance Tuning</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-newsletter">
+
+                    <h4>Newsletter</h4>
+
+                    <p>
+                        Subscribe to receive service offers and automotive updates.
+                    </p>
+
+                    <form action="404.html">
+
+                        <input
+                            type="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                        <button
+                            type="submit"
+                            class="primary-btn"
+                        >
+                            Subscribe
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Stackly Auto Care. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ========================================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ========================================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+<script src="services.js"></script>
+<script src="script.js"></script>
+</html>
