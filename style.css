@@ -2694,6 +2694,15 @@ ul {
     transition: var(--transition);
 }
 
+.input-group select option {
+
+    background: #111;
+
+    color: #fff;
+
+    padding: 10px;
+}
+
 .input-group textarea {
 
     resize: none;
@@ -2708,6 +2717,187 @@ ul {
     border-color: var(--gold);
 
     box-shadow: 0 0 20px rgba(212,175,55,0.15);
+}
+
+/* ========================================= */
+/* CONTACT SECTION REVEAL */
+/* ========================================= */
+
+.contact-info,
+.contact-form-card {
+
+    opacity: 0;
+
+    transition:
+        transform 1s ease,
+        opacity 1s ease;
+}
+
+/* ========================================= */
+/* LEFT */
+/* ========================================= */
+
+.contact-info {
+
+    transform: translateX(-80px);
+}
+
+/* ========================================= */
+/* RIGHT */
+/* ========================================= */
+
+.contact-form-card {
+
+    transform: translateX(80px);
+}
+
+/* ========================================= */
+/* ACTIVE */
+/* ========================================= */
+
+.contact-info.show,
+.contact-form-card.show {
+
+    opacity: 1;
+
+    transform: translateX(0);
+}
+
+/* ========================================= */
+/* CONTACT ITEM HOVER */
+/* ========================================= */
+
+.contact-item {
+
+    transition: 0.4s ease;
+}
+
+.contact-item:hover {
+
+    transform: translateX(10px);
+}
+
+.contact-item i {
+
+    transition:
+        transform 0.45s ease,
+        background 0.45s ease;
+}
+
+.contact-item:hover i {
+
+    transform:
+        rotate(-8deg)
+        scale(1.08);
+
+    background: rgba(212,175,55,0.18);
+}
+
+/* ========================================= */
+/* INPUT HOVER */
+/* ========================================= */
+
+.input-group input:hover,
+.input-group textarea:hover,
+.input-group select:hover {
+
+    border-color: rgba(212,175,55,0.25);
+}
+
+/* ========================================= */
+/* PREMIUM FORM CARD */
+/* ========================================= */
+
+.contact-form-card {
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+/* ========================================= */
+/* FORM GLOW */
+/* ========================================= */
+
+.contact-form-card::before {
+
+    content: '';
+
+    position: absolute;
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(212,175,55,0.08),
+            transparent 60%
+        );
+
+    opacity: 0;
+
+    transition: 0.5s ease;
+}
+
+.contact-form-card form {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.contact-form-card:hover::before {
+
+    opacity: 1;
+}
+
+/* ========================================= */
+/* SUBMIT BUTTON LOADER */
+/* ========================================= */
+
+.btn-loader {
+
+    width: 18px;
+    height: 18px;
+
+    border: 2px solid rgba(0,0,0,0.2);
+
+    border-top-color: #000;
+
+    border-radius: 50%;
+
+    display: none;
+
+    animation: spinLoader 0.7s linear infinite;
+}
+
+/* ========================================= */
+/* LOADING STATE */
+/* ========================================= */
+
+.submit-btn.loading .btn-text {
+
+    display: none;
+}
+
+.submit-btn.loading .btn-loader {
+
+    display: inline-block;
+}
+
+/* ========================================= */
+/* LOADER ANIMATION */
+/* ========================================= */
+
+@keyframes spinLoader {
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* ========================================= */
@@ -2730,6 +2920,150 @@ ul {
     gap: 50px;
 
     padding-bottom: 60px;
+}
+
+/* ========================================= */
+/* FOOTER BRAND */
+/* ========================================= */
+
+.footer-brand {
+
+    max-width: 360px;
+}
+
+/* ========================================= */
+/* FOOTER LOGO */
+/* ========================================= */
+
+.footer-logo {
+
+    position: relative;
+
+    display: inline-flex;
+
+    width: fit-content;
+
+    margin-bottom: 24px;
+}
+
+/* ========================================= */
+/* LOGO IMAGE */
+/* ========================================= */
+
+.footer-logo img {
+
+    width: 170px;
+
+    object-fit: contain;
+
+    transition: 0.45s ease;
+}
+
+/* ========================================= */
+/* UNDERLINE */
+/* ========================================= */
+
+.footer-logo::after {
+
+    content: '';
+
+    position: absolute;
+
+    left: 0;
+    bottom: -8px;
+
+    width: 0%;
+
+    height: 2px;
+
+    background: var(--gradient-2);
+
+    border-radius: 50px;
+
+    transition: width 0.45s ease;
+}
+
+/* ========================================= */
+/* HOVER */
+/* ========================================= */
+
+.footer-logo:hover::after {
+
+    width: 100%;
+}
+
+.footer-logo:hover img {
+
+    transform: scale(1.03);
+
+    filter:
+        drop-shadow(
+            0 0 14px rgba(212,175,55,0.18)
+        );
+}
+
+/* ========================================= */
+/* FOOTER SOCIALS */
+/* ========================================= */
+
+.footer-socials {
+
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    margin-top: 30px;
+}
+
+/* ========================================= */
+/* SOCIAL LINK */
+/* ========================================= */
+
+.footer-socials a {
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 16px;
+
+    color: var(--white);
+
+    font-size: 20px;
+
+    transition:
+        transform 0.45s ease,
+        border-color 0.45s ease,
+        background 0.45s ease,
+        color 0.45s ease;
+}
+
+/* ========================================= */
+/* HOVER */
+/* ========================================= */
+
+.footer-socials a:hover {
+
+    transform:
+        translateY(-6px)
+        rotate(-6deg);
+
+    background: rgba(212,175,55,0.12);
+
+    border-color: rgba(212,175,55,0.25);
+
+    color: var(--gold);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,0.25);
 }
 
 .footer-brand p,
@@ -3366,4 +3700,133 @@ textarea,
 select,
 button {
     font-family: inherit;
+}
+
+/* ========================================= */
+/* MOBILE FOOTER ALIGNMENT */
+/* ========================================= */
+
+@media screen and (max-width: 768px) {
+
+    /* ===================================== */
+    /* FOOTER WRAPPER */
+    /* ===================================== */
+
+    .footer-wrapper {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        gap: 50px;
+    }
+
+    /* ===================================== */
+    /* FOOTER BRAND */
+    /* ===================================== */
+
+    .footer-brand {
+
+        max-width: 100%;
+
+        margin-inline: auto;
+    }
+
+    /* ===================================== */
+    /* FOOTER LOGO */
+    /* ===================================== */
+
+    .footer-logo {
+
+        margin-inline: auto;
+    }
+
+    /* ===================================== */
+    /* FOOTER LINKS */
+    /* ===================================== */
+
+    .footer-links ul {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* ===================================== */
+    /* SOCIAL ICONS */
+    /* ===================================== */
+
+    .footer-socials {
+
+        justify-content: center;
+    }
+
+    /* ===================================== */
+    /* NEWSLETTER */
+    /* ===================================== */
+
+    .footer-newsletter {
+
+        width: 100%;
+    }
+
+    /* ===================================== */
+    /* NEWSLETTER FORM */
+    /* ===================================== */
+
+    .footer-newsletter form {
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 18px;
+
+        width: 100%;
+    }
+
+    /* ===================================== */
+    /* NEWSLETTER INPUT */
+    /* ===================================== */
+
+    .footer-newsletter input {
+
+        width: 100%;
+
+        max-width: 420px;
+
+        text-align: center;
+    }
+
+    /* ===================================== */
+    /* SUBSCRIBE BUTTON */
+    /* ===================================== */
+
+    /* ========================================= */
+/* MOBILE SUBSCRIBE BUTTON FIX */
+/* ========================================= */
+
+.footer-newsletter .primary-btn {
+
+    width: auto;
+    height: 50px;
+
+    min-width: 180px;
+
+    padding-inline: 32px;
+
+    justify-content: center;
+
+    align-self: center;
+}
+
+    /* ===================================== */
+    /* FOOTER BOTTOM */
+    /* ===================================== */
+
+    .footer-bottom {
+
+        text-align: center;
+    }
 }

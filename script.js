@@ -145,3 +145,111 @@ const statsObserver = new IntersectionObserver(
 statCards.forEach(card => {
     statsObserver.observe(card);
 });
+
+// =========================================
+// CONTACT SECTION REVEAL
+// =========================================
+
+const contactElements = document.querySelectorAll(
+    ".contact-info, .contact-form-card"
+);
+
+const contactObserver = new IntersectionObserver(
+
+    (entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("show");
+            }
+        });
+    },
+
+    {
+        threshold: 0.2
+    }
+);
+
+contactElements.forEach(element => {
+    contactObserver.observe(element);
+});
+
+// =========================================
+// FORM VALIDATION
+// =========================================
+
+const bookingForm =
+    document.getElementById("bookingForm");
+
+const submitBtn =
+    document.querySelector(".submit-btn");
+
+bookingForm.addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    const name =
+        document.getElementById("name").value.trim();
+
+    const email =
+        document.getElementById("email").value.trim();
+
+    const vehicle =
+        document.getElementById("vehicle").value.trim();
+
+    const service =
+        document.getElementById("service").value.trim();
+
+    const message =
+        document.getElementById("message").value.trim();
+
+    // =====================================
+    // VALIDATION
+    // =====================================
+
+    if (
+        name === "" ||
+        email === "" ||
+        vehicle === "" ||
+        service === "" ||
+        message === ""
+    ) {
+
+        alert("Please fill all fields.");
+
+        return;
+    }
+
+    // =====================================
+    // EMAIL VALIDATION
+    // =====================================
+
+    const emailPattern =
+        /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+    if (!email.match(emailPattern)) {
+
+        alert("Please enter a valid email.");
+
+        return;
+    }
+
+    // =====================================
+    // BUTTON LOADING
+    // =====================================
+
+    submitBtn.classList.add("loading");
+
+    // =====================================
+    // REDIRECT
+    // =====================================
+
+    setTimeout(() => {
+
+        window.location.href =
+            "thankyou.html";
+
+    }, 1800);
+});

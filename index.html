@@ -67,7 +67,7 @@
 
                 <div class="nav-actions">
 
-                    <button class="secondary-btn nav-login-btn">
+                    <button class="secondary-btn nav-login-btn" onclick="window.location.href='login.html'">
                         Login
                     </button>
 
@@ -919,36 +919,84 @@
 
                 <div class="contact-form-card">
 
-                    <form>
+                    <form id="bookingForm">
 
                         <div class="input-group">
-                            <input type="text" placeholder="Full Name">
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Full Name"
+                                required
+                            >
                         </div>
 
                         <div class="input-group">
-                            <input type="email" placeholder="Email Address">
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Email Address"
+                                required
+                            >
                         </div>
 
                         <div class="input-group">
-                            <input type="text" placeholder="Vehicle Model">
+                            <input
+                                type="text"
+                                id="vehicle"
+                                placeholder="Vehicle Model"
+                                required
+                            >
                         </div>
 
                         <div class="input-group">
-                            <select>
-                                <option>Select Service</option>
-                                <option>Detailing</option>
-                                <option>Ceramic Coating</option>
-                                <option>Diagnostics</option>
-                                <option>Performance Tuning</option>
+
+                            <select id="service" required>
+
+                                <option value="">
+                                    Select Service
+                                </option>
+
+                                <option>
+                                    Detailing
+                                </option>
+
+                                <option>
+                                    Ceramic Coating
+                                </option>
+
+                                <option>
+                                    Diagnostics
+                                </option>
+
+                                <option>
+                                    Performance Tuning
+                                </option>
+
                             </select>
+
                         </div>
 
                         <div class="input-group">
-                            <textarea placeholder="Additional Details"></textarea>
+
+                            <textarea
+                                id="message"
+                                placeholder="Additional Details"
+                                required
+                            ></textarea>
+
                         </div>
 
-                        <button class="primary-btn">
-                            Submit Booking
+                        <button
+                            type="submit"
+                            class="primary-btn submit-btn"
+                        >
+
+                            <span class="btn-text">
+                                Submit Booking
+                            </span>
+
+                            <span class="btn-loader"></span>
+
                         </button>
 
                     </form>
@@ -973,14 +1021,42 @@
 
                 <div class="footer-brand">
 
-                    <div class="logo">
-                        <img src="Assets/logo-stackly.webp" alt="Stackly Motors Logo">
-                    </div>
+                    <a href="index.html" class="footer-logo">
+
+                        <img
+                            src="Assets/logo-stackly.webp"
+                            alt="Veltrix Auto Logo"
+                        >
+
+                    </a>
 
                     <p>
-                        Delivering premium automotive servicing experiences with
-                        innovation, precision, and unmatched craftsmanship.
+                        Luxury automotive care, premium detailing,
+                        diagnostics, and performance engineering
+                        crafted for elite driving experiences.
                     </p>
+
+                    <!-- SOCIAL ICONS -->
+
+                    <div class="footer-socials">
+
+                        <a href="404.html">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a href="404.html">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+
+                        <a href="404.html">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+
+                        <a href="404.html">
+                            <i class="ri-youtube-line"></i>
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -1018,11 +1094,18 @@
                         Subscribe to receive service offers and automotive updates.
                     </p>
 
-                    <form>
+                    <form action="404.html">
 
-                        <input type="email" placeholder="Enter Email">
+                        <input
+                            type="email"
+                            placeholder="Enter your email"
+                            required
+                        >
 
-                        <button>
+                        <button
+                            type="submit"
+                            class="primary-btn"
+                        >
                             Subscribe
                         </button>
 
@@ -1035,7 +1118,7 @@
             <div class="footer-bottom">
 
                 <p>
-                    © 2026 Veltrix Auto Care. All Rights Reserved.
+                    © 2026 Stackly Auto Care. All Rights Reserved.
                 </p>
 
             </div>
