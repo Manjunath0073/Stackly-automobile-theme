@@ -2323,51 +2323,289 @@ ul {
 }
 
 /* ========================================= */
-/* TESTIMONIALS */
+/* TESTIMONIAL SECTION */
+/* ========================================= */
+
+.testimonials-section {
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+/* ========================================= */
+/* MARQUEE WRAPPER */
+/* ========================================= */
+
+.testimonial-marquee {
+
+    position: relative;
+
+    overflow: hidden;
+
+    margin-top: 70px;
+}
+
+/* ========================================= */
+/* EDGE FADE */
+/* ========================================= */
+
+.testimonial-marquee::before,
+.testimonial-marquee::after {
+
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+
+    width: 180px;
+    height: 100%;
+
+    z-index: 5;
+
+    pointer-events: none;
+}
+
+.testimonial-marquee::before {
+
+    left: 0;
+
+    background:
+        linear-gradient(
+            to right,
+            #0b0b0b,
+            transparent
+        );
+}
+
+.testimonial-marquee::after {
+
+    right: 0;
+
+    background:
+        linear-gradient(
+            to left,
+            #0b0b0b,
+            transparent
+        );
+}
+
+/* ========================================= */
+/* TRACK */
+/* ========================================= */
+
+.testimonial-track {
+
+    display: flex;
+
+    gap: 30px;
+
+    width: max-content;
+
+    animation:
+        marqueeScroll 28s linear infinite;
+}
+
+/* ========================================= */
+/* PAUSE ON HOVER */
+/* ========================================= */
+
+.testimonial-marquee:hover .testimonial-track {
+
+    animation-play-state: paused;
+}
+
+/* ========================================= */
+/* ITEM */
+/* ========================================= */
+
+.testimonial-item {
+
+    flex-shrink: 0;
+
+    width: 420px;
+}
+
+/* ========================================= */
+/* TESTIMONIAL CARD */
 /* ========================================= */
 
 .testimonial-card {
 
-    background: rgba(255,255,255,0.05);
+    position: relative;
 
-    border: 1px solid rgba(255,255,255,0.06);
+    height: 100%;
+
+    padding: 42px;
 
     border-radius: 30px;
 
-    padding: 45px;
+    overflow: hidden;
 
-    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.04);
+
+    border: 1px solid rgba(255,255,255,0.06);
+
+    backdrop-filter: blur(14px);
+
+    transition:
+        transform 0.45s ease,
+        border-color 0.45s ease,
+        box-shadow 0.45s ease;
 }
+
+/* ========================================= */
+/* CARD GLOW */
+/* ========================================= */
+
+.testimonial-card::before {
+
+    content: '';
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(212,175,55,0.12),
+            transparent 60%
+        );
+
+    opacity: 0;
+
+    transition: 0.45s ease;
+}
+
+/* ========================================= */
+/* HOVER */
+/* ========================================= */
+
+.testimonial-card:hover {
+
+    transform:
+        translateY(-12px);
+
+    border-color: rgba(212,175,55,0.25);
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.35);
+}
+
+.testimonial-card:hover::before {
+
+    opacity: 1;
+}
+
+/* ========================================= */
+/* STARS */
+/* ========================================= */
 
 .stars {
 
+    font-size: 20px;
+
     color: var(--gold);
 
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
+
+/* ========================================= */
+/* REVIEW */
+/* ========================================= */
 
 .testimonial-card p {
 
+    font-size: 16px;
+
+    line-height: 1.9;
+
     color: var(--text-gray);
 
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
+
+/* ========================================= */
+/* CLIENT INFO */
+/* ========================================= */
 
 .client-info {
 
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 18px;
 }
+
+/* ========================================= */
+/* CLIENT IMAGE */
+/* ========================================= */
 
 .client-info img {
 
-    width: 70px;
-    height: 70px;
+    width: 72px;
+    height: 72px;
 
     border-radius: 50%;
 
     object-fit: cover;
+
+    border: 2px solid rgba(212,175,55,0.25);
+}
+
+/* ========================================= */
+/* CLIENT NAME */
+/* ========================================= */
+
+.client-info h4 {
+
+    font-size: 18px;
+
+    margin-bottom: 5px;
+}
+
+.client-info span {
+
+    color: var(--text-gray);
+
+    font-size: 14px;
+}
+
+/* ========================================= */
+/* MARQUEE ANIMATION */
+/* ========================================= */
+
+@keyframes marqueeScroll {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .testimonial-item {
+
+        width: 320px;
+    }
+
+    .testimonial-card {
+
+        padding: 32px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .testimonial-item {
+
+        width: 280px;
+    }
 }
 
 /* ========================================= */
