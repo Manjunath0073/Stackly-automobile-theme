@@ -10,7 +10,7 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Login | Veltrix Auto</title>
+    <title>Sign Up | Veltrix Auto</title>
 
     <!-- GOOGLE FONT -->
 
@@ -26,78 +26,86 @@
         rel="stylesheet"
     >
 
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="signup.css">
 
 </head>
 
 <body>
 
     <!-- ===================================== -->
-    <!-- LOGIN PAGE -->
+    <!-- SIGNUP PAGE -->
     <!-- ===================================== -->
 
-    <section class="login-page">
+    <section class="signup-page">
 
-        <div class="login-wrapper">
+        <div class="signup-wrapper">
 
             <!-- LEFT PANEL -->
 
-            <div class="login-showcase">
+            <div class="signup-showcase">
 
-                <div class="showcase-content">
+                <div class="showcase-overlay"></div>
 
-                    <span class="showcase-tag">
+                <div class="signup-showcase-content">
+
+                    <span class="signup-tag">
 
                         <span></span>
 
-                        Premium Access Portal
+                        Premium Registration Portal
 
                     </span>
 
                     <h1>
 
-                        Drive The
+                        Join The
                         <span>
-                            Future
+                            Luxury Drive
                         </span>
 
                     </h1>
 
                     <p>
 
-                        Access premium automobile management,
-                        luxury servicing insights, and customer
-                        experiences through the Veltrix portal.
+                        Create your Veltrix account and unlock
+                        premium automobile servicing, luxury
+                        diagnostics, and performance experiences.
 
                     </p>
 
-                    <!-- STATS -->
+                    <!-- BENEFITS -->
 
-                    <div class="showcase-stats">
+                    <div class="signup-benefits">
 
-                        <div class="showcase-stat">
+                        <div class="benefit-card">
 
-                            <h3
-                                class="counter"
-                                data-target="12000"
-                                data-suffix="+"
-                            >
-                                0
-                            </h3>
-                            <span>Vehicles Serviced</span>
+                            <i class="ri-shield-star-line"></i>
+
+                            <div>
+
+                                <h4>Premium Access</h4>
+
+                                <span>
+                                    Exclusive luxury services
+                                </span>
+
+                            </div>
 
                         </div>
 
-                        <div class="showcase-stat">
+                        <div class="benefit-card">
 
-                            <h3
-                                class="counter"
-                                data-target="98"
-                                data-suffix="%"
-                            >
-                                0
-                            </h3>
-                            <span>Client Satisfaction</span>
+                            <i class="ri-settings-5-line"></i>
+
+                            <div>
+
+                                <h4>Advanced Diagnostics</h4>
+
+                                <span>
+                                    AI-powered vehicle insights
+                                </span>
+
+                            </div>
 
                         </div>
 
@@ -109,24 +117,24 @@
 
             <!-- RIGHT PANEL -->
 
-            <div class="login-form-container">
+            <div class="signup-form-container">
 
                 <form
-                    id="loginForm"
-                    class="login-form"
+                    id="signupForm"
+                    class="signup-form"
                 >
 
                     <div class="form-header">
 
-                        <h2>Welcome Back</h2>
+                        <h2>Create Account</h2>
 
                         <p>
-                            Login to continue your premium experience.
+                            Begin your premium automobile journey.
                         </p>
 
                     </div>
 
-                    <!-- ROLE SELECTION -->
+                    <!-- ROLE -->
 
                     <div class="role-selector">
 
@@ -141,7 +149,7 @@
 
                             <div class="role-content">
 
-                                <i class="ri-shield-star-line"></i>
+                                <i class="ri-shield-user-line"></i>
 
                                 <span>Admin</span>
 
@@ -169,6 +177,21 @@
 
                     </div>
 
+                    <!-- NAME -->
+
+                    <div class="input-group">
+
+                        <i class="ri-user-line"></i>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Full Name"
+                            required
+                        >
+
+                    </div>
+
                     <!-- EMAIL -->
 
                     <div class="input-group">
@@ -188,11 +211,7 @@
 
                     <div class="input-group password-group">
 
-                        <!-- LEFT ICON -->
-
                         <i class="ri-lock-line input-icon"></i>
-
-                        <!-- INPUT -->
 
                         <input
                             type="password"
@@ -200,8 +219,6 @@
                             placeholder="Password"
                             required
                         >
-
-                        <!-- TOGGLE BUTTON -->
 
                         <button
                             type="button"
@@ -214,43 +231,63 @@
 
                     </div>
 
-                    <!-- OPTIONS -->
+                    <!-- CONFIRM PASSWORD -->
 
-                    <div class="form-options">
 
-                        <label>
+                    <div class="input-group password-group">
 
-                            <input type="checkbox" required>
+                        <i class="ri-lock-password-line input-icon"></i>
 
-                            Remember Me
-
-                        </label>
-
-                        <a href="404.html">
-                            Forgot Password?
-                        </a>
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm Password"
+                            required
+                        >
 
                     </div>
 
-                    <!-- SUBMIT -->
+                    <!-- PASSWORD MESSAGE -->
+
+                    <p class="password-message"></p>
+
+                    <!-- TERMS -->
+
+                    <div class="terms-wrapper">
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="terms"
+                            >
+
+                            I agree to the terms &
+                            conditions
+
+                        </label>
+
+                    </div>
+
+                    <!-- BUTTON -->
 
                     <button
                         type="submit"
-                        class="login-btn"
+                        class="signup-btn"
                     >
 
-                        Login Now
+                        Create Premium Account
 
                     </button>
 
-                    <!-- SIGNUP REDIRECT -->
+                    <!-- LOGIN -->
 
-                    <div class="signup-redirect">
+                    <div class="login-redirect">
 
-                        Don’t have an account?
+                        Already have an account?
 
-                        <a href="signup.html">
-                            Create Account
+                        <a href="login.html">
+                            Login
                         </a>
 
                     </div>
@@ -263,7 +300,7 @@
 
     </section>
 
-    <script src="login.js"></script>
+    <script src="signup.js"></script>
 
 </body>
 

@@ -8,7 +8,7 @@
 
     --white: #ffffff;
 
-    --text-gray: #a9a9a9;
+    --text-gray: #aaaaaa;
 
     --bg-dark: #060606;
 
@@ -55,12 +55,10 @@ input {
 }
 
 /* ========================================= */
-/* LOGIN PAGE */
+/* SIGNUP PAGE */
 /* ========================================= */
 
-.login-page {
-
-    position: relative;
+.signup-page {
 
     min-height: 100vh;
 
@@ -91,25 +89,25 @@ input {
 }
 
 /* ========================================= */
-/* LOGIN WRAPPER */
+/* WRAPPER */
 /* ========================================= */
 
-.login-wrapper {
+.signup-wrapper {
 
     width: 100%;
-    max-width: 1450px;
+    max-width: 1500px;
 
     display: grid;
 
-    grid-template-columns: 1fr 520px;
-
-    background: rgba(255,255,255,0.03);
-
-    border: 1px solid rgba(255,255,255,0.06);
+    grid-template-columns: 1.05fr 0.95fr;
 
     border-radius: 40px;
 
     overflow: hidden;
+
+    border: 1px solid rgba(255,255,255,0.06);
+
+    background: rgba(255,255,255,0.03);
 
     backdrop-filter: blur(14px);
 
@@ -121,54 +119,45 @@ input {
 /* LEFT PANEL */
 /* ========================================= */
 
-.login-showcase {
+.signup-showcase {
 
     position: relative;
 
     padding: 90px;
 
-    display: flex;
-    align-items: center;
-
     overflow: hidden;
 
-    background:
-        linear-gradient(
-            135deg,
-            rgba(255,255,255,0.02),
-            rgba(255,255,255,0.01)
-        );
+    display: flex;
+    align-items: center;
 }
 
 /* ========================================= */
-/* SHOWCASE GLOW */
+/* SHOWCASE OVERLAY */
 /* ========================================= */
 
-.login-showcase::before {
-
-    content: '';
+.showcase-overlay {
 
     position: absolute;
 
-    top: -120px;
-    right: -120px;
+    top: -100px;
+    right: -100px;
 
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
+
+    border-radius: 50%;
 
     background:
         rgba(212,175,55,0.10);
 
     filter: blur(100px);
-
-    border-radius: 50%;
 }
 
 /* ========================================= */
-/* SHOWCASE CONTENT */
+/* CONTENT */
 /* ========================================= */
 
-.showcase-content {
+.signup-showcase-content {
 
     position: relative;
 
@@ -181,7 +170,7 @@ input {
 /* TAG */
 /* ========================================= */
 
-.showcase-tag {
+.signup-tag {
 
     display: inline-flex;
     align-items: center;
@@ -196,11 +185,9 @@ input {
     border: 1px solid var(--border-color);
 
     margin-bottom: 35px;
-
-    color: #d8d8d8;
 }
 
-.showcase-tag span {
+.signup-tag span {
 
     width: 8px;
     height: 8px;
@@ -211,19 +198,19 @@ input {
 }
 
 /* ========================================= */
-/* TITLE */
+/* HEADING */
 /* ========================================= */
 
-.showcase-content h1 {
+.signup-showcase-content h1 {
 
-    font-size: 82px;
+    font-size: 76px;
 
     line-height: 1;
 
     margin-bottom: 28px;
 }
 
-.showcase-content h1 span {
+.signup-showcase-content h1 span {
 
     color: var(--gold);
 }
@@ -232,7 +219,7 @@ input {
 /* DESCRIPTION */
 /* ========================================= */
 
-.showcase-content p {
+.signup-showcase-content p {
 
     font-size: 17px;
 
@@ -240,47 +227,101 @@ input {
 
     color: var(--text-gray);
 
-    margin-bottom: 50px;
-
     max-width: 520px;
+
+    margin-bottom: 50px;
 }
 
 /* ========================================= */
-/* STATS */
+/* BENEFITS */
 /* ========================================= */
 
-.showcase-stats {
+.signup-benefits {
 
     display: flex;
-    gap: 60px;
+    flex-direction: column;
 
-    flex-wrap: wrap;
+    gap: 24px;
 }
 
-.showcase-stat h3 {
+/* ========================================= */
+/* BENEFIT CARD */
+/* ========================================= */
 
-    font-size: 46px;
+.benefit-card {
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 24px;
+
+    border-radius: 24px;
+
+    background: rgba(255,255,255,0.04);
+
+    border: 1px solid rgba(255,255,255,0.06);
+
+    transition: var(--transition);
+}
+
+.benefit-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color:
+        rgba(212,175,55,0.22);
+}
+
+/* ========================================= */
+/* ICON */
+/* ========================================= */
+
+.benefit-card i {
+
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+
+    background:
+        rgba(212,175,55,0.10);
 
     color: var(--gold);
 
-    margin-bottom: 8px;
+    font-size: 30px;
 }
 
-.showcase-stat span {
+/* ========================================= */
+/* BENEFIT TEXT */
+/* ========================================= */
+
+.benefit-card h4 {
+
+    font-size: 22px;
+
+    margin-bottom: 6px;
+}
+
+.benefit-card span {
 
     color: var(--text-gray);
+
+    font-size: 15px;
 }
 
 /* ========================================= */
 /* RIGHT PANEL */
 /* ========================================= */
 
-.login-form-container {
+.signup-form-container {
 
     padding: 70px 50px;
-
-    background:
-        rgba(255,255,255,0.03);
 
     border-left:
         1px solid rgba(255,255,255,0.06);
@@ -293,7 +334,7 @@ input {
 /* FORM */
 /* ========================================= */
 
-.login-form {
+.signup-form {
 
     width: 100%;
 }
@@ -304,7 +345,7 @@ input {
 
 .form-header {
 
-    margin-bottom: 40px;
+    margin-bottom: 36px;
 }
 
 .form-header h2 {
@@ -322,7 +363,7 @@ input {
 }
 
 /* ========================================= */
-/* ROLE SELECTOR */
+/* ROLE */
 /* ========================================= */
 
 .role-selector {
@@ -333,18 +374,7 @@ input {
 
     gap: 18px;
 
-    margin-bottom: 32px;
-}
-
-/* ========================================= */
-/* ROLE CARD */
-/* ========================================= */
-
-.role-card {
-
-    position: relative;
-
-    cursor: pointer;
+    margin-bottom: 30px;
 }
 
 .role-card input {
@@ -352,21 +382,19 @@ input {
     display: none;
 }
 
-/* ========================================= */
-/* ROLE CONTENT */
-/* ========================================= */
-
 .role-content {
 
     padding: 24px;
 
-    border-radius: 24px;
+    border-radius: 22px;
 
     background: rgba(255,255,255,0.04);
 
     border: 1px solid rgba(255,255,255,0.08);
 
     text-align: center;
+
+    cursor: pointer;
 
     transition: var(--transition);
 }
@@ -382,20 +410,13 @@ input {
     margin-bottom: 14px;
 }
 
-.role-content span {
-
-    font-size: 16px;
-}
-
-/* ========================================= */
-/* ACTIVE ROLE */
-/* ========================================= */
-
 .role-card input:checked + .role-content {
 
-    border-color: rgba(212,175,55,0.35);
+    border-color:
+        rgba(212,175,55,0.3);
 
-    background: rgba(212,175,55,0.08);
+    background:
+        rgba(212,175,55,0.08);
 
     transform: translateY(-4px);
 }
@@ -408,11 +429,11 @@ input {
 
     position: relative;
 
-    margin-bottom: 24px;
+    margin-bottom: 22px;
 }
 
 /* ========================================= */
-/* INPUT ICON */
+/* ICON */
 /* ========================================= */
 
 .input-group i {
@@ -427,6 +448,8 @@ input {
     color: var(--gold);
 
     font-size: 20px;
+
+    z-index: 5;
 }
 
 /* ========================================= */
@@ -457,52 +480,78 @@ input {
 
 .input-group input:focus {
 
-    border-color: rgba(212,175,55,0.3);
+    border-color:
+        rgba(212,175,55,0.3);
 
     box-shadow:
         0 0 25px rgba(212,175,55,0.12);
 }
 
 /* ========================================= */
-/* PASSWORD BUTTON */
+/* PASSWORD MESSAGE */
 /* ========================================= */
 
+.password-message {
+
+    font-size: 14px;
+
+    margin-top: -10px;
+    margin-bottom: 18px;
+
+    padding-left: 8px;
+
+    transition: 0.3s ease;
+}
+
+/* ========================================= */
+/* ERROR */
+/* ========================================= */
+
+.password-message.error {
+
+    color: #ff5f5f;
+}
+
+/* ========================================= */
+/* SUCCESS */
+/* ========================================= */
+
+.password-message.success {
+
+    color: #43d17d;
+}
+
+/* ========================================= */
+/* INVALID INPUT */
+/* ========================================= */
+
+.input-group input.invalid {
+
+    border-color:
+        rgba(255,95,95,0.45);
+
+    box-shadow:
+        0 0 20px rgba(255,95,95,0.12);
+}
+
+/* ========================================= */
+/* VALID INPUT */
+/* ========================================= */
+
+.input-group input.valid {
+
+    border-color:
+        rgba(67,209,125,0.4);
+
+    box-shadow:
+        0 0 20px rgba(67,209,125,0.10);
+}
 /* ========================================= */
 /* PASSWORD GROUP */
 /* ========================================= */
 
-.password-group {
-
-    position: relative;
-}
-
-/* ========================================= */
-/* LEFT ICON */
-/* ========================================= */
-
-.input-icon {
-
-    position: absolute;
-
-    left: 20px;
-    top: 50%;
-
-    transform: translateY(-50%);
-
-    color: var(--gold);
-
-    font-size: 20px;
-
-    z-index: 5;
-}
-
-/* ========================================= */
-/* PASSWORD INPUT */
-/* ========================================= */
-
 .password-group input {
 
-    padding-left: 58px;
     padding-right: 58px;
 }
 
@@ -514,13 +563,13 @@ input {
 
     position: absolute;
 
-    right: 18px;
+    right: 16px;
     top: 50%;
 
     transform: translateY(-50%);
 
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
 
     border: none;
 
@@ -528,32 +577,11 @@ input {
 
     background: rgba(255,255,255,0.05);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     cursor: pointer;
-
-    color: var(--text-gray);
 
     transition: var(--transition);
 
-    z-index: 10;
-}
-
-/* ========================================= */
-/* HOVER */
-/* ========================================= */
-
-.toggle-password:hover {
-
-    background: rgba(212,175,55,0.12);
-
-    color: var(--gold);
-
-    transform:
-        translateY(-50%)
-        scale(1.05);
+    padding: 0;
 }
 
 /* ========================================= */
@@ -568,64 +596,42 @@ input {
     left: 50%;
 
     transform: translate(-50%, -50%);
-
-    font-size: 18px;
-
-    line-height: 1;
-
-    display: block;
-
-    pointer-events: none;
 }
 
 /* ========================================= */
-/* OPTIONS */
+/* TERMS */
 /* ========================================= */
 
-.form-options {
+.terms-wrapper {
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    margin-bottom: 34px;
-
-    gap: 20px;
-
-    flex-wrap: wrap;
+    margin-bottom: 32px;
 }
 
-.form-options label {
+.terms-wrapper label {
 
     display: flex;
     align-items: center;
-    gap: 10px;
+
+    gap: 12px;
 
     color: var(--text-gray);
 
-    font-size: 14px;
-}
-
-.form-options a {
-
-    color: var(--gold);
-
-    font-size: 14px;
+    line-height: 1.7;
 }
 
 /* ========================================= */
-/* LOGIN BUTTON */
+/* BUTTON */
 /* ========================================= */
 
-.login-btn {
+.signup-btn {
 
     width: 100%;
 
     height: 64px;
 
-    border-radius: 18px;
-
     border: none;
+
+    border-radius: 18px;
 
     background: var(--gold);
 
@@ -638,9 +644,11 @@ input {
     cursor: pointer;
 
     transition: var(--transition);
+
+    margin-bottom: 30px;
 }
 
-.login-btn:hover {
+.signup-btn:hover {
 
     transform: translateY(-4px);
 
@@ -648,71 +656,20 @@ input {
         0 18px 35px rgba(212,175,55,0.25);
 }
 
-
 /* ========================================= */
-/* SIGNUP REDIRECT */
+/* LOGIN REDIRECT */
 /* ========================================= */
 
-.signup-redirect {
-
-    margin-top: 28px;
+.login-redirect {
 
     text-align: center;
 
     color: var(--text-gray);
-
-    font-size: 15px;
 }
 
-/* ========================================= */
-/* LINK */
-/* ========================================= */
-
-.signup-redirect a {
+.login-redirect a {
 
     color: var(--gold);
-
-    font-weight: 600;
-
-    position: relative;
-
-    transition: var(--transition);
-}
-
-/* ========================================= */
-/* UNDERLINE */
-/* ========================================= */
-
-.signup-redirect a::after {
-
-    content: '';
-
-    position: absolute;
-
-    left: 0;
-    bottom: -4px;
-
-    width: 0%;
-
-    height: 1px;
-
-    background: var(--gold);
-
-    transition: width 0.35s ease;
-}
-
-/* ========================================= */
-/* HOVER */
-/* ========================================= */
-
-.signup-redirect a:hover {
-
-    opacity: 0.9;
-}
-
-.signup-redirect a:hover::after {
-
-    width: 100%;
 }
 
 /* ========================================= */
@@ -721,38 +678,28 @@ input {
 
 @media screen and (max-width: 1200px) {
 
-    .login-wrapper {
+    .signup-wrapper {
 
         grid-template-columns: 1fr;
-    }
-
-    .login-showcase {
-
-        min-height: 450px;
     }
 }
 
 @media screen and (max-width: 768px) {
 
-    .login-page {
+    .signup-page {
 
         padding: 20px;
     }
 
-    .login-showcase,
-    .login-form-container {
+    .signup-showcase,
+    .signup-form-container {
 
         padding: 50px 30px;
     }
 
-    .showcase-content h1 {
+    .signup-showcase-content h1 {
 
         font-size: 58px;
-    }
-
-    .form-header h2 {
-
-        font-size: 34px;
     }
 
     .role-selector {
@@ -763,23 +710,18 @@ input {
 
 @media screen and (max-width: 480px) {
 
-    .showcase-content h1 {
+    .signup-showcase-content h1 {
 
         font-size: 42px;
     }
 
-    .showcase-content p {
-
-        font-size: 15px;
-    }
-
     .form-header h2 {
 
-        font-size: 28px;
+        font-size: 32px;
     }
 
     .input-group input,
-    .login-btn {
+    .signup-btn {
 
         height: 58px;
     }
