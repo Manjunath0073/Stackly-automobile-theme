@@ -67,3 +67,40 @@ processSteps.forEach((step) => {
 
     processObserver.observe(step);
 });
+
+// =========================================
+// PACKAGE CARD SCROLL ANIMATION
+// =========================================
+
+const packageCards =
+    document.querySelectorAll(
+        ".auto-package-card"
+    );
+
+const packageObserver =
+    new IntersectionObserver(
+
+        (entries) => {
+
+            entries.forEach((entry, index) => {
+
+                if (entry.isIntersecting) {
+
+                    setTimeout(() => {
+
+                        entry.target.classList.add("show");
+
+                    }, index * 180);
+                }
+            });
+        },
+
+        {
+            threshold: 0.2
+        }
+    );
+
+packageCards.forEach((card) => {
+
+    packageObserver.observe(card);
+});

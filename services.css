@@ -1154,3 +1154,363 @@
         font-size: 24px;
     }
 }
+
+/* ========================================= */
+/* SERVICE PACKAGES SECTION */
+/* ========================================= */
+
+.auto-service-packages {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(212,175,55,0.08),
+            transparent 24%
+        ),
+        linear-gradient(
+            180deg,
+            #0a0a0a,
+            #111111
+        );
+}
+
+/* ========================================= */
+/* GRID */
+/* ========================================= */
+
+.auto-packages-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 34px;
+
+    align-items: center;
+}
+
+/* ========================================= */
+/* PACKAGE CARD */
+/* ========================================= */
+
+.auto-package-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 55px 42px;
+
+    border-radius: 36px;
+
+    background:
+        rgba(255,255,255,0.03);
+
+    border:
+        1px solid rgba(255,255,255,0.06);
+
+    backdrop-filter: blur(14px);
+
+    transition: 0.55s ease;
+
+    text-align: center;
+
+    opacity: 0;
+
+    transform:
+        translateY(80px);
+}
+
+/* ========================================= */
+/* SHOW ANIMATION */
+/* ========================================= */
+
+.auto-package-card.show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+/* ========================================= */
+/* ACTIVE PACKAGE */
+/* ========================================= */
+
+.auto-active-package {
+
+    transform:
+        scale(1.05);
+
+    border-color:
+        rgba(212,175,55,0.24);
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(212,175,55,0.06),
+            rgba(255,255,255,0.03)
+        );
+}
+
+/* ========================================= */
+/* GOLD GLOW */
+/* ========================================= */
+
+.auto-active-package::before {
+
+    content: '';
+
+    position: absolute;
+
+    top: -120px;
+    right: -120px;
+
+    width: 240px;
+    height: 240px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(212,175,55,0.12);
+
+    filter: blur(90px);
+}
+
+/* ========================================= */
+/* SHINE EFFECT */
+/* ========================================= */
+
+.auto-package-card::after {
+
+    content: '';
+
+    position: absolute;
+
+    top: -120%;
+    left: -120%;
+
+    width: 220%;
+    height: 220%;
+
+    background:
+        linear-gradient(
+            135deg,
+            transparent,
+            rgba(255,255,255,0.05),
+            transparent
+        );
+
+    transform: rotate(24deg);
+
+    transition: 1s ease;
+}
+
+/* ========================================= */
+/* HOVER */
+/* ========================================= */
+
+.auto-package-card:hover {
+
+    transform:
+        translateY(-14px);
+
+    border-color:
+        rgba(212,175,55,0.24);
+
+    box-shadow:
+        0 28px 70px rgba(0,0,0,0.4);
+}
+
+.auto-package-card:hover::after {
+
+    top: 100%;
+    left: 100%;
+}
+
+/* ========================================= */
+/* LABEL */
+/* ========================================= */
+
+.auto-package-label {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 22px;
+
+    border-radius: 50px;
+
+    background:
+        rgba(212,175,55,0.10);
+
+    color: var(--gold);
+
+    font-size: 14px;
+
+    margin-bottom: 28px;
+
+    border:
+        1px solid rgba(212,175,55,0.16);
+}
+
+/* ========================================= */
+/* PRICE */
+/* ========================================= */
+
+.auto-package-card h3 {
+
+    font-size: 68px;
+
+    line-height: 1;
+
+    color: var(--gold);
+
+    margin-bottom: 24px;
+
+    transition: 0.4s ease;
+}
+
+/* ========================================= */
+/* PRICE HOVER */
+/* ========================================= */
+
+.auto-package-card:hover h3 {
+
+    transform: scale(1.03);
+}
+
+/* ========================================= */
+/* DESCRIPTION */
+/* ========================================= */
+
+.auto-package-card p {
+
+    color: var(--text-gray);
+
+    line-height: 1.9;
+
+    margin-bottom: 34px;
+}
+
+/* ========================================= */
+/* LIST */
+/* ========================================= */
+
+.auto-package-card ul {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+
+    margin-bottom: 38px;
+}
+
+/* ========================================= */
+/* LIST ITEM */
+/* ========================================= */
+
+.auto-package-card ul li {
+
+    position: relative;
+
+    color: #d8d8d8;
+
+    padding-left: 24px;
+
+    transition: 0.35s ease;
+}
+
+/* ========================================= */
+/* BULLET */
+/* ========================================= */
+
+.auto-package-card ul li::before {
+
+    content: '';
+
+    position: absolute;
+
+    left: 0;
+    top: 10px;
+
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: var(--gold);
+}
+
+/* ========================================= */
+/* LIST HOVER */
+/* ========================================= */
+
+.auto-package-card:hover ul li {
+
+    transform: translateX(4px);
+}
+
+/* ========================================= */
+/* BUTTON */
+/* ========================================= */
+
+.auto-package-card .auto-primary-btn {
+
+    width: 100%;
+
+    justify-content: center;
+}
+
+/* ========================================= */
+/* RESPONSIVE */
+/* ========================================= */
+
+@media screen and (max-width: 1200px) {
+
+    .auto-packages-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .auto-active-package {
+
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .auto-packages-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .auto-package-card {
+
+        padding: 45px 32px;
+    }
+
+    .auto-package-card h3 {
+
+        font-size: 56px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .auto-package-card {
+
+        padding: 38px 24px;
+    }
+
+    .auto-package-card h3 {
+
+        font-size: 46px;
+    }
+}
