@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+>
+
+<title>Customer Dashboard</title>
+
+<link
+href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+rel="stylesheet"
+>
+
+<link
+rel="stylesheet"
+href="customer-dashboard.css"
+>
+<link
+rel="stylesheet"
+href="style.css"
+>
+
+</head>
+
+<body>
+
+<div class="customer-layout">
+
+    <!-- SIDEBAR -->
+
+    <aside class="customer-sidebar">
+
+                <div class="logo">
+
+                    <a href="index.html">
+
+                        <img
+                            src="Assets/logo-stackly.webp"
+                            alt="Stackly Motors Logo"
+                        >
+
+                    </a>
+
+                </div>
+        <ul class="customer-menu">
+
+            <li
+            class="customer-menu-item active"
+            data-tab="overview"
+            >
+
+                <i class="ri-home-5-line"></i>
+
+                <span>
+
+                    Overview
+
+                </span>
+
+            </li>
+
+            <li
+            class="customer-menu-item"
+            data-tab="bookings"
+            >
+
+                <i class="ri-calendar-check-line"></i>
+
+                <span>
+
+                    My Bookings
+
+                </span>
+
+            </li>
+
+            <li
+            class="customer-menu-item"
+            data-tab="garage"
+            >
+
+                <i class="ri-car-line"></i>
+
+                <span>
+
+                    Vehicle Garage
+
+                </span>
+
+            </li>
+
+            <li
+            class="customer-menu-item"
+            data-tab="history"
+            >
+
+                <i class="ri-history-line"></i>
+
+                <span>
+
+                    Service History
+
+                </span>
+
+            </li>
+
+        </ul>
+
+        <button
+        class="customer-logout"
+        id="customerLogout"
+        >
+
+            <i class="ri-logout-box-r-line"></i>
+
+            Logout
+
+        </button>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="customer-main">
+
+        <!-- HEADER -->
+
+        <div class="customer-header">
+
+            <button
+            class="customer-menu-toggle"
+            >
+
+                <i class="ri-menu-line"></i>
+
+            </button>
+
+            <div class="customer-profile">
+
+                <img
+                src="Assets/persons/vicky-hladynets-C8Ta0gwPbQg-unsplash_11zon.webp"
+                alt=""
+                >
+
+                <div>
+
+                    <h4
+                    id="customerName"
+                    >
+
+                        Customer
+
+                    </h4>
+
+                    <span
+                    id="customerEmail"
+                    >
+
+                        customer@gmail.com
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- OVERVIEW -->
+
+        <section
+        class="customer-content active"
+        id="overview"
+        >
+
+            <div class="welcome-card">
+
+                <div>
+
+                    <span>
+
+                        Welcome Back
+
+                    </span>
+
+                    <h2>
+
+                        Hello,
+                        <span id="welcomeName">
+
+                            User
+
+                        </span>
+
+                    </h2>
+
+                    <p>
+
+                        Track bookings, monitor services and manage your luxury vehicles.
+
+                    </p>
+
+                </div>
+
+                <img
+                src="assets/images/dashboard-car.png"
+                alt=""
+                >
+
+            </div>
+
+            <div class="customer-cards">
+
+                <div class="customer-card">
+
+                    <h3>
+
+                        03
+
+                    </h3>
+
+                    <span>
+
+                        Vehicles Added
+
+                    </span>
+
+                </div>
+
+                <div class="customer-card">
+
+                    <h3>
+
+                        07
+
+                    </h3>
+
+                    <span>
+
+                        Total Services
+
+                    </span>
+
+                </div>
+
+                <div class="customer-card">
+
+                    <h3>
+
+                        1200
+
+                    </h3>
+
+                    <span>
+
+                        Reward Points
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BOOKINGS -->
+
+        <section
+        class="customer-content"
+        id="bookings"
+        >
+
+            <h2>
+
+                Upcoming Bookings
+
+            </h2>
+
+            <div class="dashboard-list-card">
+
+                BMW Ceramic Coating —
+                12 June 2026
+
+            </div>
+
+            <div class="dashboard-list-card">
+
+                Audi Detailing —
+                15 June 2026
+
+            </div>
+
+        </section>
+
+
+        <!-- GARAGE -->
+
+        <section
+        class="customer-content"
+        id="garage"
+        >
+
+            <h2>
+
+                My Vehicles
+
+            </h2>
+
+            <div class="customer-cards">
+
+                <div class="customer-card">
+
+                    BMW M4
+
+                </div>
+
+                <div class="customer-card">
+
+                    Audi RS7
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HISTORY -->
+
+        <section
+        class="customer-content"
+        id="history"
+        >
+
+            <h2>
+
+                Service History
+
+            </h2>
+
+            <div class="dashboard-list-card">
+
+                Ceramic Coating Completed
+
+            </div>
+
+            <div class="dashboard-list-card">
+
+                Premium Detailing Completed
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="customer-dashboard.js"></script>
+
+</body>
+
+</html>
