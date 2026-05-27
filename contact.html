@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Stackly Auto Care</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
+
+    <!-- Remix Icons -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+
+    <!-- AOS Animation -->
+    <link
+        href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+        rel="stylesheet"
+    />
+
+    <!-- Swiper -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+</head>
+
+<body>
+
+    <!-- ========================================= -->
+    <!-- CUSTOM CURSOR -->
+    <!-- ========================================= -->
+
+    <div class="custom-cursor"></div>
+
+    <!-- ========================================= -->
+    <!-- SCROLL PROGRESS -->
+    <!-- ========================================= -->
+
+    <div class="scroll-progress"></div>
+
+    <!-- ========================================= -->
+    <!-- HEADER -->
+    <!-- ========================================= -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <div class="logo">
+                    <img src="Assets/logo-stackly.webp" alt="Stackly Motors Logo">
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+
+                    <button class="secondary-btn nav-login-btn" onclick="window.location.href='login.html'">
+                        Login
+                    </button>
+
+                    <button class="primary-btn nav-signup-btn" onclick="window.location.href='signup.html'">
+                        Sign Up
+                    </button>
+
+                    <div class="menu-toggle">
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+    <!-- ========================================= -->
+    <!-- CONTACT HERO SECTION -->
+    <!-- ========================================= -->
+
+    <section class="auto-contact-hero">
+
+        <div class="auto-contact-container">
+
+            <div class="auto-contact-hero-wrapper">
+
+                <!-- LEFT -->
+
+                <div class="auto-contact-hero-content">
+
+                    <span class="auto-contact-tag">
+
+                        <span></span>
+
+                        Contact Stackly Automotive
+
+                    </span>
+
+                    <h1 class="auto-contact-hero-title">
+
+                        Connect With
+                        Luxury Automotive
+                        Specialists
+
+                    </h1>
+
+                    <p class="auto-contact-hero-description">
+
+                        Experience premium vehicle detailing,
+                        ceramic protection, diagnostics,
+                        and luxury automotive engineering
+                        crafted for elite vehicles.
+
+                    </p>
+
+                    <div class="auto-contact-hero-actions">
+
+                        <a
+                            href="#contact-form"
+                            class="primary-btn"
+                        >
+
+                            Book Appointment
+
+                        </a>
+
+                        <a
+                            href="#contact-info"
+                            class="secondary-btn"
+                        >
+
+                            Explore Contact
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT -->
+
+                <div class="auto-contact-hero-visual">
+
+                    <div class="auto-contact-main-image">
+
+                        <img
+                            src="assets/images/contact-hero.jpg"
+                            alt=""
+                        >
+
+                    </div>
+
+                    <div class="auto-contact-floating-card card-1">
+
+                        <h3>24/7</h3>
+
+                        <span>
+                            Premium Assistance
+                        </span>
+
+                    </div>
+
+                    <div class="auto-contact-floating-card card-2">
+
+                        <h3>12K+</h3>
+
+                        <span>
+                            Luxury Vehicles Served
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- CONTACT INFO SECTION -->
+    <!-- ========================================= -->
+
+    <section
+        class="auto-contact-info auto-section-spacing"
+        id="contact-info"
+    >
+
+        <div class="auto-contact-container">
+
+            <div class="auto-section-header">
+
+                <span class="auto-contact-tag">
+                    Contact Information
+                </span>
+
+                <h2 class="auto-contact-section-title">
+
+                    Luxury Automotive
+                    Support Center
+
+                </h2>
+
+            </div>
+
+            <div class="auto-contact-info-grid">
+
+                <!-- CARD 1 -->
+
+                <div class="auto-contact-info-card">
+
+                    <div class="auto-contact-info-icon">
+
+                        <i class="ri-map-pin-line"></i>
+
+                    </div>
+
+                    <h3>
+                        Studio Location
+                    </h3>
+
+                    <p>
+
+                        45 Luxury Avenue,
+                        Race Course,
+                        Coimbatore, Tamil Nadu
+
+                    </p>
+
+                </div>
+
+                <!-- CARD 2 -->
+
+                <div class="auto-contact-info-card">
+
+                    <div class="auto-contact-info-icon">
+
+                        <i class="ri-phone-line"></i>
+
+                    </div>
+
+                    <h3>
+                        Call Experts
+                    </h3>
+
+                    <p>
+
+                        +91 98765 43210
+                        <br>
+                        +91 91234 56789
+
+                    </p>
+
+                </div>
+
+                <!-- CARD 3 -->
+
+                <div class="auto-contact-info-card">
+
+                    <div class="auto-contact-info-icon">
+
+                        <i class="ri-mail-line"></i>
+
+                    </div>
+
+                    <h3>
+                        Email Support
+                    </h3>
+
+                    <p>
+
+                        support@veltrixauto.com
+                        <br>
+                        booking@veltrixauto.com
+
+                    </p>
+
+                </div>
+
+                <!-- CARD 4 -->
+
+                <div class="auto-contact-info-card">
+
+                    <div class="auto-contact-info-icon">
+
+                        <i class="ri-time-line"></i>
+
+                    </div>
+
+                    <h3>
+                        Working Hours
+                    </h3>
+
+                    <p>
+
+                        Monday - Saturday
+                        <br>
+                        9:00 AM - 8:00 PM
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- CONTACT FORM SECTION -->
+    <!-- ========================================= -->
+
+    <section
+        class="auto-contact-form-section auto-section-spacing"
+        id="contact-form"
+    >
+
+        <div class="auto-contact-container">
+
+            <div class="auto-contact-form-wrapper">
+
+                <!-- LEFT -->
+
+                <div class="auto-contact-form-content">
+
+                    <span class="auto-contact-tag">
+                        Schedule Consultation
+                    </span>
+
+                    <h2 class="auto-contact-section-title">
+
+                        Book Your
+                        Premium Automotive
+                        Experience
+
+                    </h2>
+
+                    <p>
+
+                        Submit your vehicle details and connect
+                        with our automotive specialists for
+                        luxury detailing, diagnostics, ceramic
+                        protection, and elite engineering services.
+
+                    </p>
+
+                    <div class="auto-contact-feature-list">
+
+                        <div class="auto-contact-feature">
+
+                            <i class="ri-checkbox-circle-line"></i>
+
+                            <span>
+                                Premium Vehicle Inspection
+                            </span>
+
+                        </div>
+
+                        <div class="auto-contact-feature">
+
+                            <i class="ri-checkbox-circle-line"></i>
+
+                            <span>
+                                Luxury Detailing Consultation
+                            </span>
+
+                        </div>
+
+                        <div class="auto-contact-feature">
+
+                            <i class="ri-checkbox-circle-line"></i>
+
+                            <span>
+                                Ceramic Protection Analysis
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT -->
+
+                <div class="auto-contact-form-card">
+
+                    <form>
+
+                        <div class="auto-contact-input-group">
+
+                            <input
+                                type="text"
+                                placeholder="Full Name"
+                                required
+                            >
+
+                        </div>
+
+                        <div class="auto-contact-input-group">
+
+                            <input
+                                type="email"
+                                placeholder="Email Address"
+                                required
+                            >
+
+                        </div>
+
+                        <div class="auto-contact-input-group">
+
+                            <input
+                                type="text"
+                                placeholder="Vehicle Model"
+                                required
+                            >
+
+                        </div>
+
+                        <div class="auto-contact-input-group">
+
+                            <select>
+
+                                <option>
+                                    Select Service
+                                </option>
+
+                                <option>
+                                    Premium Detailing
+                                </option>
+
+                                <option>
+                                    Ceramic Coating
+                                </option>
+
+                                <option>
+                                    Diagnostics
+                                </option>
+
+                                <option>
+                                    Performance Tuning
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="auto-contact-input-group">
+
+                            <textarea
+                                placeholder="Additional Details"
+                                required
+                            ></textarea>
+
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="primary-btn"
+                        >
+
+                            Submit Booking
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- CONTACT CTA SECTION -->
+    <!-- ========================================= -->
+
+    <section class="auto-contact-cta auto-section-spacing">
+
+        <div class="auto-contact-container">
+
+            <div class="auto-contact-cta-card">
+                <div class="cta-dot"></div>
+                <div class="cta-dot"></div>
+                <div class="cta-dot"></div>
+
+                <span class="auto-contact-tag">
+                    Premium Assistance
+                </span>
+
+                <h2>
+
+                    Elevate Your
+                    Automotive Experience
+
+                </h2>
+
+                <p>
+
+                    Connect with certified luxury automotive
+                    specialists and experience precision-crafted
+                    detailing, diagnostics, and premium engineering.
+
+                </p>
+
+                <div class="auto-contact-cta-actions">
+
+                    <a
+                        href="#contact-form"
+                        class="primary-btn"
+                    >
+
+                        Schedule Now
+
+                    </a>
+
+                    <a
+                        href="services.html"
+                        class="secondary-btn"
+                    >
+
+                        Explore Services
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-wrapper">
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+
+                        <img
+                            src="Assets/logo-stackly.webp"
+                            alt="Veltrix Auto Logo"
+                        >
+
+                    </a>
+
+                    <p>
+                        Luxury automotive care, premium detailing,
+                        diagnostics, and performance engineering
+                        crafted for elite driving experiences.
+                    </p>
+
+                    <!-- SOCIAL ICONS -->
+
+                    <div class="footer-socials">
+
+                        <a href="404.html">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a href="404.html">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+
+                        <a href="404.html">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+
+                        <a href="404.html">
+                            <i class="ri-youtube-line"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <h4>Quick Links</h4>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <h4>Services</h4>
+
+                    <ul>
+                        <li><a href="404.html">Engine Repair</a></li>
+                        <li><a href="404.html">Car Detailing</a></li>
+                        <li><a href="404.html">Ceramic Coating</a></li>
+                        <li><a href="404.html">Performance Tuning</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-newsletter">
+
+                    <h4>Newsletter</h4>
+
+                    <p>
+                        Subscribe to receive service offers and automotive updates.
+                    </p>
+
+                    <form action="404.html">
+
+                        <input
+                            type="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                        <button
+                            type="submit"
+                            class="primary-btn"
+                        >
+                            Subscribe
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Stackly Auto Care. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+<script src="contact.js"></script>
+<script src="script.js"></script>
+</html>
