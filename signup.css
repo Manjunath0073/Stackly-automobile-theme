@@ -61,7 +61,7 @@ input {
 .signup-page {
 
     min-height: 100vh;
-
+    margin-top:70px;
     padding: 30px;
 
     display: flex;
@@ -462,8 +462,8 @@ input {
 
     height: 64px;
 
-    padding-inline:
-        58px 20px;
+    padding-left: 65px;
+    padding-right: 20px;
 
     border-radius: 18px;
 
@@ -476,6 +476,13 @@ input {
     outline: none;
 
     transition: var(--transition);
+}
+
+.input-group input::placeholder{
+
+color:rgba(255,255,255,.45);
+
+padding-left:5px;
 }
 
 .input-group input:focus {
