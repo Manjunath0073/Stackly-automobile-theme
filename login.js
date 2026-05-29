@@ -1,87 +1,4 @@
 // =========================================
-// SHOWCASE COUNTER ANIMATION
-// =========================================
-
-const counters =
-    document.querySelectorAll(".counter");
-
-// =========================================
-// COUNTER FUNCTION
-// =========================================
-
-const startCounter = (counter) => {
-
-    const target =
-        +counter.getAttribute("data-target");
-
-    const suffix =
-        counter.getAttribute("data-suffix") || "";
-
-    let count = 0;
-
-    const speed = target / 120;
-
-    const updateCounter = () => {
-
-        count += speed;
-
-        if (count < target) {
-
-            // =================================
-            // FORMAT LARGE NUMBERS
-            // =================================
-
-            if (target >= 1000) {
-
-                counter.innerText =
-                    Math.floor(count / 1000) + "K" + suffix;
-            }
-
-            else {
-
-                counter.innerText =
-                    Math.floor(count) + suffix;
-            }
-
-            requestAnimationFrame(updateCounter);
-        }
-
-        else {
-
-            // ================================
-            // FINAL VALUE
-            // ================================
-
-            if (target >= 1000) {
-
-                counter.innerText =
-                    Math.floor(target / 1000) + "K" + suffix;
-            }
-
-            else {
-
-                counter.innerText =
-                    target + suffix;
-            }
-        }
-    };
-
-    updateCounter();
-};
-
-// =========================================
-// START COUNTERS
-// =========================================
-
-window.addEventListener("load", () => {
-
-    counters.forEach(counter => {
-
-        startCounter(counter);
-    });
-});
-
-// =========================================
 // PASSWORD TOGGLE
 // =========================================
 
@@ -220,7 +137,6 @@ selectedRole.value
 if(
 selectedRole.value==="admin"
 ){
-
 window.location.href =
 "admin-dashboard.html";
 
@@ -230,6 +146,23 @@ else{
 
 window.location.href =
 "customer-dashboard.html";
+
+}
+
+});
+
+// RESET FORM ON PAGE LOAD
+
+window.addEventListener("pageshow", () => {
+
+const form =
+document.getElementById(
+"loginForm"
+);
+
+if(form){
+
+form.reset();
 
 }
 

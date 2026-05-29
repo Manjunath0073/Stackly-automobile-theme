@@ -3906,3 +3906,13 @@ button {
         text-align: center;
     }
 }
+
+.nav-link.active{
+
+color:var(--primary-color);
+}
+
+.nav-link.active::after{
+
+width:100%;
+}

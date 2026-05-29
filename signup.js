@@ -249,3 +249,20 @@ confirmPasswordInput.addEventListener(
     "input",
     checkPasswords
 );
+
+// RESET FORM ON PAGE LOAD
+
+window.addEventListener("pageshow", () => {
+
+const form =
+document.getElementById(
+"signupForm"
+);
+
+if(form){
+
+form.reset();
+
+}
+
+});

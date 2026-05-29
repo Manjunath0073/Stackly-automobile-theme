@@ -7,7 +7,7 @@ document.querySelectorAll(
 ".auto-contact-info-card"
 );
 
-const contactObserver =
+const contactPageObserver =
 new IntersectionObserver(
 
 (entries)=>{
@@ -39,7 +39,7 @@ threshold:.2
 
 contactCards.forEach(card=>{
 
-contactObserver.observe(card);
+contactPageObserver.observe(card);
 
 });
 
@@ -53,47 +53,49 @@ document.querySelector(
 ".auto-contact-form-card form"
 );
 
-contactForm.addEventListener(
-"submit",
+if (contactForm){
+    contactForm.addEventListener(
+    "submit",
 
-function(e){
+    function(e){
 
-e.preventDefault();
+    e.preventDefault();
 
-const fields =
-contactForm.querySelectorAll(
-"input,textarea,select"
-);
+    const fields =
+    contactForm.querySelectorAll(
+    "input,textarea,select"
+    );
 
-let valid=true;
+    let valid=true;
 
-fields.forEach(field=>{
+    fields.forEach(field=>{
 
-if(
-field.value.trim()===""
-){
+    if(
+    field.value.trim()===""
+    ){
 
-field.style.borderColor=
-"#ff6767";
+    field.style.borderColor=
+    "#ff6767";
 
-valid=false;
+    valid=false;
 
-}else{
+    }else{
 
-field.style.borderColor=
-"rgba(212,175,55,.3)";
+    field.style.borderColor=
+    "rgba(212,175,55,.3)";
+    }
+
+    });
+
+    if(valid){
+
+    window.location.href=
+    "404.html";
+
+    }
+
+    });
 }
-
-});
-
-if(valid){
-
-window.location.href=
-"404.html";
-
-}
-
-});
 
 // =========================================
 // CTA REVEAL
@@ -129,6 +131,8 @@ threshold:.25
 
 );
 
+if(contactCTA){
 ctaObserver.observe(
 contactCTA
 );
+}

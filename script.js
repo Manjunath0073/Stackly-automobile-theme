@@ -123,7 +123,7 @@ const statsObserver = new IntersectionObserver(
                 const counter =
                     entry.target.querySelector(".counter");
 
-                if (!counter.classList.contains("counted")) {
+                if (counter && !counter.classList.contains("counted")) {
 
                     startCounter(counter);
 
@@ -186,73 +186,75 @@ const bookingForm =
 const submitBtn =
     document.querySelector(".submit-btn");
 
-bookingForm.addEventListener("submit", function(e) {
+if (bookingForm && submitBtn) {
+    bookingForm.addEventListener("submit", function(e) {
 
-    e.preventDefault();
+        e.preventDefault();
 
-    const name =
-        document.getElementById("name").value.trim();
+        const name =
+            document.getElementById("name").value.trim();
 
-    const email =
-        document.getElementById("email").value.trim();
+        const email =
+            document.getElementById("email").value.trim();
 
-    const vehicle =
-        document.getElementById("vehicle").value.trim();
+        const vehicle =
+            document.getElementById("vehicle").value.trim();
 
-    const service =
-        document.getElementById("service").value.trim();
+        const service =
+            document.getElementById("service").value.trim();
 
-    const message =
-        document.getElementById("message").value.trim();
+        const message =
+            document.getElementById("message").value.trim();
 
-    // =====================================
-    // VALIDATION
-    // =====================================
+        // =====================================
+        // VALIDATION
+        // =====================================
 
-    if (
-        name === "" ||
-        email === "" ||
-        vehicle === "" ||
-        service === "" ||
-        message === ""
-    ) {
+        if (
+            name === "" ||
+            email === "" ||
+            vehicle === "" ||
+            service === "" ||
+            message === ""
+        ) {
 
-        alert("Please fill all fields.");
+            alert("Please fill all fields.");
 
-        return;
-    }
+            return;
+        }
 
-    // =====================================
-    // EMAIL VALIDATION
-    // =====================================
+        // =====================================
+        // EMAIL VALIDATION
+        // =====================================
 
-    const emailPattern =
-        /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+        const emailPattern =
+            /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
-    if (!email.match(emailPattern)) {
+        if (!email.match(emailPattern)) {
 
-        alert("Please enter a valid email.");
+            alert("Please enter a valid email.");
 
-        return;
-    }
+            return;
+        }
 
-    // =====================================
-    // BUTTON LOADING
-    // =====================================
+        // =====================================
+        // BUTTON LOADING
+        // =====================================
 
-    submitBtn.classList.add("loading");
+        submitBtn.classList.add("loading");
 
-    // =====================================
-    // REDIRECT
-    // =====================================
+        // =====================================
+        // REDIRECT
+        // =====================================
 
-    setTimeout(() => {
+        setTimeout(() => {
 
-        window.location.href =
-            "thankyou.html";
+            window.location.href =
+                "thankyou.html";
 
-    }, 1800);
-});
+        }, 1800);
+    });
+}
 
 
 
@@ -320,4 +322,33 @@ navLinks.classList.remove(
 
 }
 
+
+// =========================================
+// ACTIVE NAVIGATION
+// =========================================
+
+const currentPage =
+window.location.pathname
+.split("/")
+.pop() || "index.html";
+
+const navLinksActive =
+document.querySelectorAll(
+".nav-link"
+);
+
+navLinksActive.forEach(link=>{
+
+const href =
+link.getAttribute("href");
+
+if(href === currentPage){
+
+link.classList.add(
+"active"
+);
+
+}
+
+});
 

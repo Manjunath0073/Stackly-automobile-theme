@@ -415,21 +415,22 @@ input {
 /* ========================================= */
 /* INPUT ICON */
 /* ========================================= */
+.input-field-icon{
 
-.input-group i {
+    position:absolute;
 
-    position: absolute;
+    left:24px;
 
-    left: 20px;
-    top: 50%;
+    top:50%;
 
-    transform: translateY(-50%);
+    transform:translateY(-50%);
 
-    color: var(--gold);
+    color:var(--gold);
 
-    font-size: 20px;
+    font-size:20px;
+
+    z-index:2;
 }
-
 /* ========================================= */
 /* INPUT */
 /* ========================================= */
@@ -440,8 +441,9 @@ input {
 
     height: 64px;
 
-    padding-inline:
-        58px 20px;
+    padding-left:60px;
+
+    padding-right:20px;
 
     border-radius: 18px;
 
@@ -503,8 +505,16 @@ input {
 
 .password-group input {
 
-    padding-left: 58px;
-    padding-right: 58px;
+    padding-left:60px !important;
+
+    padding-right:70px;
+}
+
+.input-group input::placeholder{
+
+color:rgba(255,255,255,.45);
+
+letter-spacing:.3px;
 }
 
 /* ========================================= */
