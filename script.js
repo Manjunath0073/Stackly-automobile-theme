@@ -352,3 +352,26 @@ link.classList.add(
 
 });
 
+const heroSwiper =
+document.querySelector(".hero-swiper");
+
+if(heroSwiper){
+
+new Swiper(".hero-swiper",{
+
+loop:true,
+
+effect:"fade",
+
+speed:1200,
+
+autoplay:{
+delay:3500,
+disableOnInteraction:false
+},
+
+allowTouchMove:false
+
+});
+
+}

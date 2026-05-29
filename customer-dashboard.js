@@ -215,3 +215,51 @@ window.location.href=
 
 );
 
+// =========================================
+// LOAD USER DETAILS
+// =========================================
+
+const storedUserName =
+localStorage.getItem(
+"userName"
+);
+
+const storedUserEmail =
+localStorage.getItem(
+"userEmail"
+);
+
+if(storedUserName){
+
+document.getElementById(
+"customerName"
+).textContent =
+storedUserName;
+
+document.getElementById(
+"welcomeName"
+).textContent =
+storedUserName;
+
+const customerWelcome =
+document.getElementById(
+"customerWelcome"
+);
+
+if(customerWelcome){
+
+customerWelcome.textContent =
+`Welcome Back, ${storedUserName} 👋`;
+
+}
+
+}
+
+if(storedUserEmail){
+
+document.getElementById(
+"customerEmail"
+).textContent =
+storedUserEmail;
+
+}

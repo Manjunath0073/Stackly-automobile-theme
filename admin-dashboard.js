@@ -25,7 +25,21 @@ localStorage.getItem(
 )
 || "admin@gmail.com";
 
+const adminWelcome =
+document.getElementById(
+"adminWelcome"
+);
 
+if(adminWelcome){
+
+adminWelcome.innerText =
+`Welcome Back, ${
+localStorage.getItem(
+"userName"
+) || "Admin"
+} 👋`;
+
+}
 
 // =========================================
 // SIDEBAR MENU SWITCH
@@ -201,4 +215,5 @@ window.location.href=
 }
 
 );
+
 

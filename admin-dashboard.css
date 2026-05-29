@@ -760,3 +760,36 @@ width:0;
         width: 120px;
     }
 }
+
+.admin-header-info{
+
+flex:1;
+
+margin-left:30px;
+}
+
+.admin-header-info h2{
+
+margin:0;
+
+font-size:30px;
+
+font-weight:700;
+}
+
+.admin-header-info p{
+
+margin-top:8px;
+
+font-size:14px;
+
+color:#999;
+}
+@media(max-width:768px){
+
+.admin-header-info{
+
+display:none;
+}
+
+}
