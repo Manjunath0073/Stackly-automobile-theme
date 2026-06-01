@@ -53,48 +53,62 @@ document.querySelector(
 ".auto-contact-form-card form"
 );
 
-if (contactForm){
+if(contactForm){
+
     contactForm.addEventListener(
     "submit",
 
     function(e){
 
-    e.preventDefault();
+        e.preventDefault();
 
-    const fields =
-    contactForm.querySelectorAll(
-    "input,textarea,select"
-    );
+        const fields =
+        contactForm.querySelectorAll(
+        "input,textarea,select"
+        );
 
-    let valid=true;
+        let valid = true;
 
-    fields.forEach(field=>{
+        fields.forEach(field=>{
 
-    if(
-    field.value.trim()===""
-    ){
+            if(field.value.trim()===""){
 
-    field.style.borderColor=
-    "#ff6767";
+                field.style.borderColor =
+                "#ff6767";
 
-    valid=false;
+                valid = false;
 
-    }else{
+            }else{
 
-    field.style.borderColor=
-    "rgba(212,175,55,.3)";
-    }
+                field.style.borderColor =
+                "rgba(212,175,55,.3)";
+            }
+
+        });
+
+        if(valid){
+
+            const successMessage =
+            document.getElementById(
+            "successMessage"
+            );
+
+            successMessage.style.display =
+            "block";
+
+            contactForm.reset();
+
+            setTimeout(()=>{
+
+                successMessage.style.display =
+                "none";
+
+            },3000);
+
+        }
 
     });
 
-    if(valid){
-
-    window.location.href=
-    "404.html";
-
-    }
-
-    });
 }
 
 // =========================================

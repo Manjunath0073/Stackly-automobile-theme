@@ -1515,3 +1515,14 @@ font-size:15px;
 }
 
 }
+
+.success-message{
+    display:none;
+    background:#22c55e;
+    color:#fff;
+    padding:12px;
+    border-radius:8px;
+    margin-bottom:15px;
+    text-align:center;
+    font-size:14px;
+}

@@ -247,12 +247,29 @@ if (bookingForm && submitBtn) {
         // REDIRECT
         // =====================================
 
+        // =====================================
+// SUCCESS MESSAGE
+// =====================================
+
+    setTimeout(() => {
+
+        submitBtn.classList.remove("loading");
+
+        document
+            .getElementById("successMessage")
+            .style.display = "block";
+
+        bookingForm.reset();
+
         setTimeout(() => {
 
-            window.location.href =
-                "thankyou.html";
+            document
+                .getElementById("successMessage")
+                .style.display = "none";
 
-        }, 1800);
+        }, 3000);
+
+    }, 1800);
     });
 }
 
@@ -373,5 +390,40 @@ disableOnInteraction:false
 allowTouchMove:false
 
 });
+
+}
+
+const newsletterForm =
+document.getElementById(
+"newsletterForm"
+);
+
+if(newsletterForm){
+
+    newsletterForm.addEventListener(
+    "submit",
+
+    function(e){
+
+        e.preventDefault();
+
+        const successMessage =
+        document.getElementById(
+        "newsletterSuccess"
+        );
+
+        successMessage.style.display =
+        "block";
+
+        newsletterForm.reset();
+
+        setTimeout(()=>{
+
+            successMessage.style.display =
+            "none";
+
+        },3000);
+
+    });
 
 }
